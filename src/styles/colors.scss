@@ -1,0 +1,25 @@
+$brand-colors: 
+("white",white, #0f0f0f ),
+("black",#1C1C1C, white),
+("yellow",#f08f00, #eb9e2b),
+("dark-blue", #1b1b7e, #1b1b7e),
+("light-grey", #F9F9F9, rgb(22, 21, 21)),
+("orange", #7b6763, green),
+("blue", #2e96d3, #2e96d3);
+
+@each $color in $brand-colors {
+  .is-#{nth($color,1)}-bg{
+    background-color: nth($color,2) !important;
+  }
+  .is-#{nth($color,1)}{
+    color: nth($color,2) !important;
+  }
+  body.dark-mode {
+    .is-#{nth($color,1)}-bg{
+      background-color: nth($color,3) !important;
+    }
+    .is-#{nth($color,1)}{
+      color: nth($color,3) !important;
+    }
+  }
+}
