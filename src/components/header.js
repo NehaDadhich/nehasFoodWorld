@@ -1,6 +1,6 @@
 import React from "react";
 import Logo from "../images/nehasFoodWorld.png";
-import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav, Tooltip, OverlayTrigger } from 'react-bootstrap';
 import {Link} from "gatsby";
 import useDarkMode from "use-dark-mode";
 
@@ -17,7 +17,7 @@ export default function Header() {
     }
   }
     return (
-  <Navbar class="navbar">
+  <Navbar className="navbar" >
     <Navbar.Brand>
         <Link to="/" className="link-reverse">
         <img src={Logo} class="logo"/>
@@ -30,11 +30,19 @@ export default function Header() {
       {greetMe()}
     </Nav>
     <Nav className="justify-content-end">
+    <OverlayTrigger placement="bottom" overlay={tooltip}>
       <button id="darkModeButton" className="darkModeBtn" onClick={toggleDarkMode}> ☀️ </button>
+      </OverlayTrigger>
       </Nav>
   </Navbar>
     );
 }
+
+const tooltip = (
+  <Tooltip id="tooltip">
+    Change theme
+  </Tooltip>
+);
 
 const greetMe = function() {
     var dateTime = new Date();

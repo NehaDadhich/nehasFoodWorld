@@ -14,7 +14,7 @@ export default function About() {
                 <div className="row pad-10-b is-light-grey-bg is-black">
                     <div className="pad-5">
                 <h4> Hi 👋 </h4>
-                    <p>I am Neha Dadhich, a Graduate Software Engineer at American Express. 
+                    <p>I am a Graduate Software Engineer at American Express. 
                     I am passionate about programming and software development.
                     I have mainly worked with backend technologies. Recently, I started learning front end development and completed 
                     <a className="link" target="_blank" href="https://www.freecodecamp.org/certification/nehadadhich/javascript-algorithms-and-data-structures"> FreeCodeCamp's JavaScript Data Structure and Algorithm Certificate. </a>

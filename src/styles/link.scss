@@ -23,12 +23,14 @@ a:hover {
   transform: scale(1.05);
 }
 
-// .link-reverse{
-//   transition: all .2s ease-in-out;
-//   font-weight: 100;
-//   text-decoration: none;
-//   color: #2E4052;
-// }
+.mail-link {
+  font-size: 18px;
+  vertical-align: middle;
+  line-height: 2;
+}
+.mail-link:hover {
+  text-decoration: none !important;
+}
 .link:hover {
     border-bottom: 1px solid #f08f00 !important;
     text-decoration: none !important;

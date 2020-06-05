@@ -1,12 +1,17 @@
 ---
 path: "/oats-apple-drink"
 title: "Oats Apple Drink"
-displayImage: ./oats-apple-drink.png
+displayImage: ./images/oats-apple-drink.png
+date: 2020-06-03T00:00:00.000Z
+description: "A quick, healthy and tasty drink to energise your mornings"
 tags: ["Oats", "Apple", "Drink"]
 ---
 
-![Oats Apple Drink](oats-apple-drink.png) 
-A quick, healthy and tasty drink to energise your mornings. 
+![Oats Apple Drink](./images/oats-apple-drink.png) 
+I am not a big fan of porridge and always looking for new ways to make oats interesting. This is a quick, healthy and tasty drink to energise your mornings. 
+
+**Serves:** 1\
+**Cooking Time:** 10 to 15 minutes
 
 ###Ingredients
 - 1 medium-sized red apple
@@ -15,9 +20,6 @@ A quick, healthy and tasty drink to energise your mornings.
 - 1 tsp rose water (If you are using concentrated rose essence, two to three drops should be enough. )
 - 1/4th cup oats
 - 1/2 cup milk. ( I have used dairy milk. However, feel free to use any milk you like. )
-
-**Serves:** 1\
-**Cooking Time:** 10 to 15 minutes
 
 ###Procedure
 - Take a sauce pan and dry roast the oats until light brown for 2 to 3 minutes.

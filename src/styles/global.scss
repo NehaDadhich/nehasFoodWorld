@@ -13,6 +13,7 @@
 @import "./hero.scss";
 @import "./input.scss";
 @import "./margin_padding.scss";
+@import "./images.scss";
 
 @for $i from 1 through 6 {
     h#{7 - $i} {
@@ -27,6 +28,9 @@
     margin-right: auto;
       height: 300px;
       margin: 12px;
+  }
+  a {
+    @extend .is-black; 
   }
  
 }
@@ -121,6 +125,11 @@ hr {
     padding: 10px;
     background-color: #262626;
     color: white;
+}
+
+.sticky-nav {
+  position: sticky;
+  top: 0;
 }
 
 
