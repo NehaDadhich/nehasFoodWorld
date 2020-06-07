@@ -5,11 +5,12 @@ displayImage: ./images/malai-moong-tadka.png
 date: 2020-06-04T00:00:00.000Z
 description: "A high protein, creamy dal perfect with rice or preferred bread."
 tags: ["Malai", "Moong", "Cream", "Tadka"]
+type: "recipe"
 ---
 
-![Malai Moong Tadka](./images/malai-moong-tadka.png)
+![Malai Moong Tadka](./images/malai-moong-tadka.png) 
 
-Whole moong dal or mung bean or green gram is a very healthy, high protein gram widely used in Indian cooking. My grandmother makes it quite often and we enjoy it with hot steaming rice. One day, I thought to give the Moong tadka a creamy twist and it was appreciated by everyone. Malai Moong Tadka is a creamy, delicious curry with aromatic spices. 
+Whole moong dal or mung bean or green gram is a very healthy, high protein gram widely used in Indian cooking. My grandmother makes it quite often and we enjoy it with hot steaming rice. One day, I thought to give the Moong tadka a creamy twist and it was appreciated by everyone. Malai Moong Tadka is a creamy, delicious curry with aromatic spices.
 
 **Serves:** 4\
 **Cooking Time:** 30 to 45 minutes

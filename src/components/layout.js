@@ -6,11 +6,13 @@ import Footer from "../components/footer";
 const Layout = ({ children }) => {
   return (
     <>
-    <div className="is-dark-blue-bg">
+    <div className="is-light-grey-bg is-black">
       <Header />
       </div>
       <main className="fixed-height pad-10-t is-white-bg">{children}</main>
-      <Footer className="is-white-bg"/>
+      <div className="is-dark-grey-bg is-black">
+      <Footer />
+      </div>
     </>
   );
 };

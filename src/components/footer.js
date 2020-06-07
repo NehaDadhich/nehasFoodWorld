@@ -7,7 +7,7 @@ export default function Footer(){
         <div class="footer">
             Made with ❤️ by Neha Dadhich
             <br />
-            For ideas, discussion and feedback find me at &nbsp;
+            For ideas, discussions and feedback find me at &nbsp;
             <a href="https://www.linkedin.com/in/neha-dadhich-gu/" target="_blank"><img src={linkedInLogo} height="15px"/></a> &nbsp;
             <a href="https://github.com/NehaDadhich" target="_blank"><img src={githubLogo} height="18px"/></a>
              &nbsp; <a href="mailto:nehadadhich97@gmail.com" className="mail-link"> ✉️ </a>

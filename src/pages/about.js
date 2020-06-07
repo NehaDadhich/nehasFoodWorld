@@ -7,7 +7,7 @@ export default function About() {
         <>
         <Layout>
         <SEO title="About" />
-            <div className="container-small pad-10-b pad-10-l">
+            <div className="container-small pad-10-b pad-10-l pad-10-r">
             <div className="row">
                 <h1 class="is-blue is-hero-menu"> Welcome to Neha's Food World</h1>
                 </div>
@@ -23,7 +23,7 @@ export default function About() {
                     I believe, cooking and coding are both artistic skills therefore, I thought it would be a good idea to combine them and build something. 
                     </p>
                     <p>
-                    Through this website, I am trying to share my version of few recipes as well as improve my coding skills.
+                    Through this website, I am trying to share my version of few recipes as well as improve my coding skills. You can also see how this website is being developed in the tech section.
                 </p>
                 <p> This website was developed using <a className="link" target="_blank" href="https://github.com/slarsendisney/gatsby-mango">Samuel Larsen-Disney's mango gatsby boilerplate. </a> Thank you Sam for being an excellent teacher.</p>
                 <p> I hope you find this website helpful and enjoy some tasty food. </p>

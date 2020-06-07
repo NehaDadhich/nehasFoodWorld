@@ -15,12 +15,16 @@ a:hover {
   transition: all .2s ease-in-out;
   font-weight: 100;
   text-decoration: none;
-  color: white !important;
 }
 
 .nav-link:hover {
   border-bottom: 1px solid white !important;
   transform: scale(1.05);
+}
+
+.nav-link:visited, 
+.link:visited {
+  @extend .is-black;
 }
 
 .mail-link {
@@ -37,8 +41,3 @@ a:hover {
     color: black !important;
     transform: scale(1.05);
 }
-
-// .link-reverse:hover {
-//   color: #fff !important;
-//   transform: scale(1.05);
-// }

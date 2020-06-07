@@ -15,9 +15,10 @@ export class Search extends Component {
     }
 
     render() {
+        console.log(this.state.results)
         return (
-            <div>
-                <input type="text" value={this.state.query} onChange={this.search} className="search-box" placeholder="Search for recipes.."/>
+            <div className="pad-9-l">
+                <input type="text" value={this.state.query} onChange={this.search} className="search-box" placeholder="Search for recipes or tech articles.."/>
                 <ul className="plain-ul"> 
                     { 
                         this.state.results.map(function(page) {
@@ -50,7 +51,7 @@ export class Search extends Component {
         this.setState({
             query,
             // Query the index with search string to get an [] of IDs
-            results: this.index.search(query)
+            results: this.index.search(query, {expand:true})
                 // Map over each ID and return the full document
                 .map(({
                 ref,

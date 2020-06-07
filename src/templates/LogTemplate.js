@@ -7,8 +7,7 @@ export default ({
   data: {
     markdownRemark: {
       frontmatter: {
-        title,
-        displayImage: {publicURL}
+        title
       },
       html,
     }
@@ -18,9 +17,8 @@ export default ({
   <SEO title={title} />
   <div>
       <div className="col-xs-12 ">
-        <div className="wrapper pad-10-l pad-10-b">
-          <div className="pad-10-b pad-5-l pad-2-t pad-5-r is-light-grey-bg is-black">
-          { <img className="cover-image" src={publicURL} /> }
+        <div className="wrapper pad-10-l pad-10-b pad-10-r">
+          <div className="pad-10-b pad-10-l pad-2-t pad-10-r is-light-grey-bg is-black">
           <h1 className="margin-3-b is-blue">{title}</h1>
           <div
             className={`${html ? "markdown" : ""}`}
@@ -39,8 +37,8 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
-        displayImage {publicURL}
+        }
+        
       }
     }
-  }
 `;

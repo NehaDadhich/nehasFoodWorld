@@ -5,9 +5,11 @@ displayImage: ./images/oats-apple-drink.png
 date: 2020-06-03T00:00:00.000Z
 description: "A quick, healthy and tasty drink to energise your mornings"
 tags: ["Oats", "Apple", "Drink"]
+type: "recipe"
 ---
 
 ![Oats Apple Drink](./images/oats-apple-drink.png) 
+
 I am not a big fan of porridge and always looking for new ways to make oats interesting. This is a quick, healthy and tasty drink to energise your mornings. 
 
 **Serves:** 1\

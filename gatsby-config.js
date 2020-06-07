@@ -10,20 +10,30 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-use-dark-mode`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-webpack-bundle-analyzer`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         icon: `src/images/nehasFoodWorldIcon.png`
       }
     },
+    // {
+    //   resolve: `gatsby-plugin-purgecss`,
+    //   options: {
+    //     printRejected: true, // Print removed selectors and processed file names
+    //     develop: true, // Enable while using `gatsby develop`
+    //   },
+    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+         
           {
-            resolve: `gatsby-remark-relative-images`,
+            resolve: `gatsby-remark-images`
           },
-          `gatsby-remark-copy-images`,
           `gatsby-remark-copy-linked-files`
         ]
       }
@@ -35,6 +45,13 @@ module.exports = {
         path: `${__dirname}/recipes`
       }
     }, 
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/tech`
+      }
+    },
     {
       resolve: `@gatsby-contrib/gatsby-plugin-elasticlunr-search`,
             options: {

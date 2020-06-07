@@ -5,9 +5,11 @@ displayImage: ./images/chilly-garlic-spaghetti.png
 date: 2020-06-01T00:00:00.000Z
 description: "Spicy spaghetti with garlic aroma."
 tags: ["Noodles", "Spaghetti", "Pasta", "Garlic", "Chilly"]
+type: "recipe"
 ---
 
 ![Chilly Garlic Spaghetti](./images/chilly-garlic-spaghetti.png) 
+
 Spaghetti stir fried in homemade spicy chilly garlic sauce, this recipe is perfect for lunch and dinner. You can also cook this recipe with vegetables of your choice, noodles or rice. Also, you can adjust the spice as you prefer.
 
 **Serves:** 4\

@@ -20,14 +20,17 @@
         font-size: $i * 1.4em;
     }
 }
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
 
 .markdown {
   img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-      height: 300px;
-      margin: 12px;
+    height: 100px;
   }
   a {
     @extend .is-black; 
@@ -37,6 +40,7 @@
 body {
     margin: 0px;
     font-family: Lato;
+    font-size: 1.1em;
 }
 
 h1 { 
@@ -115,21 +119,14 @@ hr {
   list-style-type: none;
 }
 
-.always-white-text {
-  color: white;
+.small-text {
+  font-size: 0.8em;
 }
 
 .footer {
     text-align: center;
     font-family: Lato;
     padding: 10px;
-    background-color: #262626;
-    color: white;
-}
-
-.sticky-nav {
-  position: sticky;
-  top: 0;
 }
 
 

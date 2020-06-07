@@ -5,9 +5,11 @@ displayImage: ./images/aloo-matar-bhat.png
 date: 2020-06-01T00:00:00.000Z
 description: "Aromatic rice spiced with potato and peas, a perfect dish for lunch or dinner."
 tags: ["Rice", "Bhat", "Aloo", "Potato", "Peas", "Mattar"]
+type: "recipe"
 ---
 
 ![Aloo Matar Bhat](./images/aloo-matar-bhat.png) 
+
 Green peas, potatoes and rice are like a perfect comnbination which always turns out to be good. Aloo Matar Bhat is easy to make, mild and healthy meal perfect for lunch or dinner. 
 
 **Serves:** 4\

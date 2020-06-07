@@ -3,11 +3,13 @@ path: "/khatta-meetha-poha"
 title: "Khatta Meetha Poha"
 displayImage: ./images/khatta-meetha-poha.png
 date: 2020-06-02T00:00:00.000Z
-description: "Flattened rice with an amazing sweet and sour combination. Perfect for anyone who loves to enjoy contrasting flavours."
+description: "Flattened rice with an amazing sweet and sour contrasting combination."
 tags: ["Poha", "Flattened Rice"]
+type: "recipe"
 ---
 
 ![Khatta Meetha Poha](./images/khatta-meetha-poha.png) 
+
 Khatta means sour in Hindi and Meetha means sweet, this dish is an unique combination of contrasting flavours. Poha is flattened rice which are very easy to cook. Tempering is an important element of poha as it adds an amazing texture to it. My mom makes it quiet frequent and she taught me this recipe. 
 
 **Serves:** 4\

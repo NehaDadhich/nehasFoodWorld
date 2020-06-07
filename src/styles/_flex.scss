@@ -333,7 +333,8 @@
 	@if $value == flex-start {
 		-webkit-box-align: start;
 		-ms-flex-align: start;
-	} @else if $value == flex-end {
+	} 
+	@else if $value == flex-end {
 		-webkit-box-align: end;
 		-ms-flex-align: end;
 	} @else {

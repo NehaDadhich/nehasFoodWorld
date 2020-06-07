@@ -5,9 +5,11 @@ displayImage: ./images/tawa-pulao.png
 date: 2020-06-01T00:00:00.000Z
 description: "Spiced vegetable rice cooked in a pan. A healthy meal for lunch or dinner."
 tags: ["Rice", "Vegetables", "Tawa", "Pan"]
+type: "recipe"
 ---
 
 ![Tawa Pulao](./images/tawa-pulao.png) 
+
 Tawa Pulao is rice tossed with vegetables and spices. It is a quick and a beginner friendly recipe. One day, my sister suprised us by making Tawa Pulao. This dish is amazing with fresh vegetables, you can use frozen vegetables for instant cooking.
 
 **Serves:** 4\

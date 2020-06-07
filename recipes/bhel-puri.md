@@ -5,9 +5,11 @@ displayImage: ./images/bhel-puri.png
 date: 2020-06-01T00:00:00.000Z
 description: "Crunchy, spicy, tangy and a bit sweet snack made with puffed rice"
 tags: ["Puffed Rice", "Snack"]
+type: "recipe"
 ---
 
 ![Bhel Puri](./images/bhel-puri.png) 
+
 One of the popular Indian street food is bhel puri. It's a quick and easy to make dish with tangy, spicy and sweet elements to it. The main ingredient is puffed rice.
 
 **Serves:** 4\
