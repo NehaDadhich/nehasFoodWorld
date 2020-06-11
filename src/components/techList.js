@@ -6,16 +6,14 @@ export const Label = ({ title, path, displayImage, date}) => (
   
     <div className="margin-10-b margin-5-r">
   <Link to={path} className="link margin-15-b" id="path">
-    <div className="grow image-card is-light-grey-bg">
-    <Img
+    <div className="grow tech-card is-light-grey-bg is-black">
+    {/* <Img
           fluid={displayImage.childImageSharp.fluid}
           className="cover-image"
           
-        />
-      <div className="image-card-container is-black">
+        /> */}
         <h2> <strong>{title} </strong></h2> 
         <p className="small-text">{date}</p>
-      </div>
     </div>
   </Link>
   </div>
@@ -35,14 +33,7 @@ export default function techArticles() {
                 id
                 frontmatter {
                   path
-                  title
-                  displayImage {
-                    childImageSharp {
-                      fluid(maxWidth: 500) {
-                        ...GatsbyImageSharpFluid_noBase64
-                      }
-                    }
-                  }
+                   title
                   date(formatString: "MMMM DD, YYYY")
                 }
               }

@@ -3,7 +3,6 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import TechList from "../components/techList";
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function tech() {
     return (

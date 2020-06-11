@@ -14,16 +14,14 @@
 @import "./input.scss";
 @import "./margin_padding.scss";
 @import "./images.scss";
+@import "./icons.scss";
+@import "./navbar.scss";
 
 @for $i from 1 through 6 {
     h#{7 - $i} {
         font-size: $i * 1.4em;
     }
 }
-// * {
-//   margin: 0;
-//   padding: 0;
-// }
 
 .markdown {
   img {
@@ -35,12 +33,15 @@
   a {
     @extend .is-black; 
   }
- 
+}
+*
+{
+  box-sizing: border-box;
 }
 body {
     margin: 0px;
     font-family: Lato;
-    font-size: 1.1em;
+    font-size: 1.1vm;
 }
 
 h1 { 

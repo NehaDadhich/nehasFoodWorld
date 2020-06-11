@@ -3,7 +3,6 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import RecipeList from "../components/recipeList";
 import Search from "../components/Search";
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Start() {
     return (

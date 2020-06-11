@@ -2,6 +2,8 @@ import React from "react";
 import Logo from "../images/nehasFoodWorld.png";
 import {Link} from "gatsby";
 import useDarkMode from "use-dark-mode";
+import {faBars} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Header() {
   const darkMode = useDarkMode(false);
@@ -17,63 +19,74 @@ export default function Header() {
   }
     return (
       <>
-      <header className="header-style pad-2-t pad-2-b pad-5-r">
-        <div className="pad-0-l">
-            <ul className="nav-bar-ul">
-              <li>
+      <div className="row is-black pad-3-t">
+        <div className="col-md-8 col-xs-12">
       <Link to="/">
           <img alt="Neha's Food World Logo" src={Logo} class="logo"/>
-        </Link> </li>
-          <li><Link className="nav-link nav-link-style" to="/about/" activeStyle={ navLinkActive}> About </Link> </li>
-           <li><Link className="nav-link nav-link-style" to="/tech/" activeStyle={ navLinkActive}> Tech </Link> </li>
-          <li> {greetMe()} </li>
-          <li> <button id="darkModeButton" className="darkModeBtn" onClick={toggleDarkMode}> ☀️ </button> </li>
-          </ul>  
-        </div>
-      </header>
-      {/* <div className="row flexbox pad-5 container-small container-fluid justify-content-space-between">
-        <div className="col-xs-2 flexbox">
-        <Link to="/" className="link-reverse">
-          <img src={Logo} class="logo"/>
         </Link>
+        {/* <button id="darkModeButton" className="darkModeBtn" onClick={toggleDarkMode}> ☀️ </button> */}
         </div>
-        <div className="col-xs-5 flexbox">
-        <Link className="nav-link" to="/about/" activeStyle={ navLinkActive}> About </Link>
-        </div>
-        <div
-          className="col-xs-5 flexbox"
-        >
-         {greetMe()} 
-         <button id="darkModeButton" className="darkModeBtn" onClick={toggleDarkMode}> ☀️ </button>
-         </div>
-      </div> */}
-  {/* <Navbar className="navbar" >
-    <Navbar.Brand>
-        <Link to="/" className="link-reverse">
-        <img src={Logo} class="logo"/>
-        </Link>
-    </Navbar.Brand>
-    <Nav className="mr-auto">
-      <Link className="nav-link" to="/about/" activeStyle={ navLinkActive}> About </Link>
-    </Nav>
-    <Nav className="justify-content-end always-white-text">
-      {greetMe()}
-    </Nav>
-    <Nav className="justify-content-end">
-    <OverlayTrigger placement="bottom" overlay={tooltip}>
+
+  {/* <div className="col-md-1 is-blue-bg col-xs-2" style={{marginLeft: "auto"}}>
+        
+          </div> */}
+        <div class="col-md-4 col-xs-12">
+        <nav class="navbar is-black">
+    <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
+    <FontAwesomeIcon className="is-black" icon={faBars} />
+        </label>
+    <input type="checkbox" id="chkToggle"></input>
+    <ul class="main-nav" id="js-menu">
+      <li>
+        <div class="nav-links">
+        <Link className="nav-link nav-link-style" to="/about/" activeStyle={ navLinkActive}> About </Link>
+          </div>
+      </li>
+      <li>
+      <div class="nav-links">
+      <Link className="nav-link nav-link-style" to="/tech/" activeStyle={ navLinkActive}> Making of </Link>
+          </div>
+      </li>
+      <li>
+      <div class="nav-links navButton">
       <button id="darkModeButton" className="darkModeBtn" onClick={toggleDarkMode}> ☀️ </button>
-      </OverlayTrigger>
-      </Nav>
-  </Navbar> */}
+          </div>
+      </li>
+    </ul>
+  </nav>
+  </div>
+  </div>
+      {/* <div class="Navbar is-black is-light-grey-bg">
+   <div class="Navbar__Link Navbar__Link-brand">
+   <Link to="/">
+          <img alt="Neha's Food World Logo" src={Logo} class="logo"/>
+        </Link>
+    </div>
+  <nav class="Navbar__Items__Hidden">
+    <div class="Navbar__Link">
+    <Link className="nav-link nav-link-style" to="/about/" activeStyle={ navLinkActive}> About </Link>
+    </div>
+    <div class="Navbar__Link">
+    <Link className="nav-link nav-link-style" to="/tech/" activeStyle={ navLinkActive}> Making of </Link>
+    </div>
+  </nav>
+  <div className="Navbar__Items--right">
+  <nav class="Navbar__Items">
+    <div class="Navbar__Link Navbar__Link_only_desktop">
+      {greetMe()}
+    </div>
+    <div class="Navbar__Link">
+    <button id="darkModeButton" className="darkModeBtn" onClick={toggleDarkMode}> ☀️ </button>
+    </div>
+  </nav>
+  <div id="toggleBtn" class="Navbar__Link Navbar__Link-toggle">
+    <FontAwesomeIcon icon={faBars} />
+    </div>
+</div>
+</div> */}
   </>
     );
 }
-
-// const tooltip = (
-//   <Tooltip id="tooltip">
-//     Change theme
-//   </Tooltip>
-// );
 
 const greetMe = function() {
     var dateTime = new Date();
@@ -93,3 +106,16 @@ const greetMe = function() {
 const navLinkActive = {
     borderBottom: "1px solid #f08f00"
 }
+
+function classToggle() {
+  const navs = document.querySelectorAll('.Navbar__Items__Hidden')
+  
+  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+}
+
+var element = document.querySelector('.Navbar__Link-toggle');
+//element.addEventListener('click', classToggle);
+if(element){
+  element.addEventListener('click', classToggle);
+}
+  

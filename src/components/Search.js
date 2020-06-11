@@ -18,7 +18,7 @@ export class Search extends Component {
         console.log(this.state.results)
         return (
             <div className="pad-9-l">
-                <input type="text" value={this.state.query} onChange={this.search} className="search-box" placeholder="Search for recipes or tech articles.."/>
+                <input type="text" value={this.state.query} onChange={this.search} className="search-box is-light-grey-bg is-black" placeholder="Search for recipes or tech articles.."/>
                 <ul className="plain-ul"> 
                     { 
                         this.state.results.map(function(page) {

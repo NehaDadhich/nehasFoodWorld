@@ -13,7 +13,7 @@ $gutter-compensation: $flexboxgrid-gutter-width * .5 * -1;
 $half-gutter-width: $flexboxgrid-gutter-width * .5;
 
 .fixed-height {
-  min-height: calc(100vh - 150px);
+  min-height: calc(100vh - 130px);
 }
 .margin-0 {
   margin: 0
