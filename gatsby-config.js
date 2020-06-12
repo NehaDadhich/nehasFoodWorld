@@ -2,8 +2,8 @@ const path = require(`path`);
 
 module.exports = {
   siteMetadata: {
-    title: `UlitmateLogger`,
-    description: `A single space to log all your errors.`,
+    title: `Neha's Food World`,
+    description: `An easy to use simple website`,
     author: `@nehaDadhich`
   },
   plugins: [

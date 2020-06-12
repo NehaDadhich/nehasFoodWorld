@@ -24,12 +24,7 @@ export default function Header() {
       <Link to="/">
           <img alt="Neha's Food World Logo" src={Logo} class="logo"/>
         </Link>
-        {/* <button id="darkModeButton" className="darkModeBtn" onClick={toggleDarkMode}> ☀️ </button> */}
         </div>
-
-  {/* <div className="col-md-1 is-blue-bg col-xs-2" style={{marginLeft: "auto"}}>
-        
-          </div> */}
         <div class="col-md-4 col-xs-12">
         <nav class="navbar is-black">
     <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
@@ -56,51 +51,8 @@ export default function Header() {
   </nav>
   </div>
   </div>
-      {/* <div class="Navbar is-black is-light-grey-bg">
-   <div class="Navbar__Link Navbar__Link-brand">
-   <Link to="/">
-          <img alt="Neha's Food World Logo" src={Logo} class="logo"/>
-        </Link>
-    </div>
-  <nav class="Navbar__Items__Hidden">
-    <div class="Navbar__Link">
-    <Link className="nav-link nav-link-style" to="/about/" activeStyle={ navLinkActive}> About </Link>
-    </div>
-    <div class="Navbar__Link">
-    <Link className="nav-link nav-link-style" to="/tech/" activeStyle={ navLinkActive}> Making of </Link>
-    </div>
-  </nav>
-  <div className="Navbar__Items--right">
-  <nav class="Navbar__Items">
-    <div class="Navbar__Link Navbar__Link_only_desktop">
-      {greetMe()}
-    </div>
-    <div class="Navbar__Link">
-    <button id="darkModeButton" className="darkModeBtn" onClick={toggleDarkMode}> ☀️ </button>
-    </div>
-  </nav>
-  <div id="toggleBtn" class="Navbar__Link Navbar__Link-toggle">
-    <FontAwesomeIcon icon={faBars} />
-    </div>
-</div>
-</div> */}
   </>
     );
-}
-
-const greetMe = function() {
-    var dateTime = new Date();
-    var hour = dateTime.getHours();
-
-    if(hour < 12){
-        return "Good Morning ";
-    }
-    else if(hour < 18){
-        return "Good afternoon ";
-    }
-    else {
-        return "Good evening ";
-    }
 }
 
 const navLinkActive = {
@@ -113,7 +65,7 @@ function classToggle() {
   navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
 }
 
-var element = document.querySelector('.Navbar__Link-toggle');
+var element = .querySelector('.Navbar__Link-toggle');
 //element.addEventListener('click', classToggle);
 if(element){
   element.addEventListener('click', classToggle);
