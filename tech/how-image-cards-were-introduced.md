@@ -16,7 +16,7 @@ Firstly, I installed the following dependencies through npm:
 
 The recipeList.js file is responsible for displaying the list of latest recipes on the home page. I edited the graphQL query to fetch the image, description, title and date as following: 
 
-```Javascript 
+```Javascript{numberLines: true}
   query={graphql`
         query Projects {
           allMarkdownRemark
@@ -48,20 +48,20 @@ The recipeList.js file is responsible for displaying the list of latest recipes 
 ```
 This was exported to edges as follows
 
-```Javascript 
+```Javascript{numberLines: true}
 data => {
         let { edges } = data.allMarkdownRemark;
 ```
 
 And then passed to a Label component as follows: 
 
-```Javascript 
+```Javascript{numberLines: true}
   <Label {...item.node.frontmatter} className="is-black"/>
 ```
 
 The Lable component creates the image card as: 
 
-```Javascript 
+```Javascript{numberLines: true}
 export const Label = ({ title, path, description, displayImage, date}) => (
   
     <div className="margin-10-b margin-5-r">
