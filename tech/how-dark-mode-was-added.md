@@ -14,7 +14,7 @@ Then in the colors.scss file I added the colors which should be used when the us
 
 For example, each row in brand-colors will look as following
 
-``` scss
+``` scss{numberLines: true}
 $brand-colors: 
 ("white",white, #0f0f0f ),
 ```
@@ -23,7 +23,7 @@ The "white" is the name of the color, the second parameter is the color to be us
 
 The following code will create the background and font colors for the dark mode. 
 
-```scss 
+```scss{numberLines: true}
   body.dark-mode {
     .is-#{nth($color,1)}-bg{
       background-color: nth($color,3) !important;
@@ -36,13 +36,13 @@ The following code will create the background and font colors for the dark mode.
 
 I added a toggle button to the header to allow to switch between light and dark mode as following: 
 
-```Javascript 
+```Javascript{numberLines: true}
 <button id="darkModeButton" className="darkModeBtn pad-3-r" onClick={toggleDarkMode}> {darkMode.value ? "☀️" : "🌙"}</button>
 ```
 
 The following code switches between the dark and light mode: 
 
-```Javascript 
+```Javascript{numberLines: true}
  const darkMode = useDarkMode(false);
   const toggleDarkMode = function(){
     if(darkMode.value) {
