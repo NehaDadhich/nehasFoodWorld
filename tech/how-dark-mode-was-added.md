@@ -37,7 +37,10 @@ The following code will create the background and font colors for the dark mode.
 I added a toggle button to the header to allow to switch between light and dark mode as following: 
 
 ```Javascript{numberLines: true}
-<button id="darkModeButton" className="darkModeBtn pad-3-r" onClick={toggleDarkMode}> {darkMode.value ? "☀️" : "🌙"}</button>
+<button id="darkModeButton" className="darkModeBtn" onClick={toggleDarkMode} style={{float: "right"}}> {darkMode.value ?
+  <div className="theme-emoji-dark-div"> {"☀️"} </div>
+      : <div className="theme-emoji-light-div"> {"🌙" } </div>} 
+</button>
 ```
 
 The following code switches between the dark and light mode: 
