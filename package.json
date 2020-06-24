@@ -16,7 +16,7 @@
     "gatsby-remark-copy-images": "^0.2.1",
     "gatsby-remark-copy-linked-files": "^2.3.4",
     "gatsby-remark-images": "^3.3.9",
-    "gatsby-remark-prismjs": "^3.5.3",
+    "gatsby-remark-prismjs": "^3.5.4",
     "gatsby-remark-relative-images": "^0.3.0",
     "gatsby-remark-responsive-iframe": "^2.4.4",
     "gatsby-remark-smartypants": "^2.3.3",

@@ -8,9 +8,10 @@
 .display-image {
     width: 100%;
     margin: 0 auto;
-    height: 100px;
-    object-fit: contain;
+    height: 500px;
+    object-fit: fill;
 }
+
   .image-card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -47,6 +48,10 @@
     height: 165px;
     padding: 2px 16px;
     border-radius: 5px;
+  }
+
+  .dark-mode .image-card, .tech-card{
+    box-shadow: 0 2px 4px 0 #F0F0F1;
   }
 
 

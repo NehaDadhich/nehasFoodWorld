@@ -12,7 +12,7 @@ export default function lost() {
           <div className="col-xs-12 col-md-6 pad-10-l">
             <h1 className="is-hero-menu margin-0 is-black">Oops!</h1>
             <h4 className="is-hero-sub-text is-black">No recipes here...</h4>
-            <Link>
+            <Link to="/">
               <button className="custom-button margin-3-t">Take me home</button>
             </Link>
           </div>

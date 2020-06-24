@@ -1,9 +1,14 @@
 .search-box {
-    width: 60%;
+    width: 100%;
+    max-width: 500px;
     box-sizing: border-box;
-    border: 0.5px solid rgb(226, 226, 226);
+    border: 2px solid #f08f00;
     border-radius: 2px;
-    font-size:1.8vw;
+    font-size:1em;
     padding: 5px 10px;
     margin-top: 10px 5px;
+  }
+
+  .search-box:focus {
+    outline: 0;
   }

@@ -8,8 +8,6 @@ tags: ["Rice", "Bhat", "Aloo", "Potato", "Peas", "Mattar"]
 type: "recipe"
 ---
 
-![Aloo Matar Bhat](./images/aloo-matar-bhat.png) 
-
 Green peas, potatoes and rice are like a perfect comnbination which always turns out to be good. Aloo Matar Bhat is easy to make, mild and healthy meal perfect for lunch or dinner. 
 
 **Serves:** 4\
@@ -27,7 +25,7 @@ Green peas, potatoes and rice are like a perfect comnbination which always turns
 - 1/2 tsp cumin seeds
 - 1/2 tsp tumeric powder
 - 1 tsp red chilly powder
-- <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank"> 1 tsp garam masala or ground spices </a>
+- <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank" rel="noopener noreferrer"> 1 tsp garam masala or ground spices </a>
 - salt to taste
 - 1/4 tsp butter (only if frozen peas are used)
 - 2 tsp coarinder for garnishing

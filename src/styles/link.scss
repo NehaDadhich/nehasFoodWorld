@@ -1,14 +1,15 @@
-a,
-a:hover {
-  font-family: Lato;
-  text-decoration: none;
+.link {
+  @extend .is-blue; 
+  text-decoration: none !important;
+}
+.link:hover {
+  border-bottom: 1px solid #f08f00 !important;
+  text-decoration: none !important;
+  transform: scale(1.05);
 }
 
-.link  {
-  transition: all .2s ease-in-out;
-  font-weight: 100;
-  text-decoration: none;
-  @extend .is-black;
+.link:visited {
+  text-decoration: none !important;
 }
 
 .nav-link {
@@ -18,25 +19,21 @@ a:hover {
 }
 
 .nav-link:hover {
-  border-bottom: 1px solid white !important;
+  border-bottom: 1px solid #f08f00 !important;
   transform: scale(1.05);
 }
 
-.nav-link:visited, 
-.link:visited {
+.search-link {
   @extend .is-black;
 }
 
-.mail-link {
-  vertical-align: middle;
-  line-height: 2;
-}
-.mail-link:hover {
+.search-link:hover {
   text-decoration: none !important;
+  transform: scale(1.05);
+  @extend .is-black;
 }
-.link:hover {
-    border-bottom: 1px solid #f08f00 !important;
-    text-decoration: none !important;
-    color: black !important;
-    transform: scale(1.05);
+
+.search-link:visited, .search-link:focus, .search-link:active {
+  text-decoration: none !important;
+  @extend .is-black;
 }

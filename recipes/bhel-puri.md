@@ -8,8 +8,6 @@ tags: ["Puffed Rice", "Snack"]
 type: "recipe"
 ---
 
-![Bhel Puri](./images/bhel-puri.png) 
-
 One of the popular Indian street food is bhel puri. It's a quick and easy to make dish with tangy, spicy and sweet elements to it. The main ingredient is puffed rice.
 
 **Serves:** 4\
@@ -29,7 +27,7 @@ One of the popular Indian street food is bhel puri. It's a quick and easy to mak
 - 1/4 tsp cumin seed powder (if not available, dry roast cumin seeds and blend in a fine powder)
 - salt to taste
 - 1/4 cup peanuts (optional)
-- <a href="https://en.wikipedia.org/wiki/Sev_(food)" target="_blank"> 1/4 cup sev </a> (optional)
+- <a href="https://en.wikipedia.org/wiki/Sev_(food)" target="_blank" rel="noopener noreferrer" > 1/4 cup sev </a> (optional)
 - 1/4 cup papadi, a crispy fried dough wafers (I couldn't find a link, optional)
 
 

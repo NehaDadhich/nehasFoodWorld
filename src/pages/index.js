@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import RecipeList from "../components/recipeList";
-import Search from "../components/Search";
+import Search from "../components/search";
 
 export default function Start() {
     return (

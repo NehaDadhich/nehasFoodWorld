@@ -8,8 +8,6 @@ tags: ["Oats", "Apple", "Drink"]
 type: "recipe"
 ---
 
-![Oats Apple Drink](./images/oats-apple-drink.png) 
-
 I am not a big fan of porridge and always looking for new ways to make oats interesting. This is a quick, healthy and tasty drink to energise your mornings. 
 
 **Serves:** 1\

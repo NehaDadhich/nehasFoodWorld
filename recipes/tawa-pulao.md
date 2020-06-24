@@ -8,8 +8,6 @@ tags: ["Rice", "Vegetables", "Tawa", "Pan"]
 type: "recipe"
 ---
 
-![Tawa Pulao](./images/tawa-pulao.png) 
-
 Tawa Pulao is rice tossed with vegetables and spices. It is a quick and a beginner friendly recipe. One day, my sister suprised us by making Tawa Pulao. This dish is amazing with fresh vegetables, you can use frozen vegetables for instant cooking.
 
 **Serves:** 4\
@@ -33,7 +31,7 @@ Tawa Pulao is rice tossed with vegetables and spices. It is a quick and a beginn
 - 1/2 tsp cumin seeds
 - 1/2 tsp tumeric powder
 - 1/2 tsp red chilly powder
-- <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank"> 1 tsp garam masala or ground spices </a>
+- <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank" rel="noopener noreferrer"> 1 tsp garam masala or ground spices </a>
 - 1 tsp pav bhaji masala
 - salt to taste
 

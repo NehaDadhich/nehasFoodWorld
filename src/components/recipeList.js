@@ -57,13 +57,13 @@ export default function Projects() {
 
         
         return (
-          <div className="row container-small pad-10-b pad-8-l">
+          <div className="row container-small pad-10-b pad-8-l ">
             <div className="col-xs-12">
               <h2 className="margin-0-t is-black" >Latest recipes</h2>
               <div className="line margin-3-t margin-3-b" />
             </div>
 
-            <div className="row flexbox margin-0-l pad-5-t pad-5-r pad-5-b container">
+            <div className="row flexbox margin-0-l pad-5-t pad-5-r pad-5-b">
               {
                 
               edges.map(item => (

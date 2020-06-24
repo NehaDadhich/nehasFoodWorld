@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
@@ -7,7 +8,8 @@ export default ({
   data: {
     markdownRemark: {
       frontmatter: {
-        title
+        title,
+        displayImage
       },
       html,
     }
@@ -18,8 +20,12 @@ export default ({
   <div>
       <div className="col-xs-12 ">
         <div className="wrapper pad-10-l pad-10-b pad-10-r">
-          <div className="pad-10-b pad-10-l pad-2-t pad-10-r is-light-grey-bg is-black">
-          <h1 className="margin-3-b is-blue">{title}</h1>
+          <div className="article-content is-light-grey-bg is-black">
+          <h1 className="margin-3-b is-pink">{title}</h1>
+          {displayImage && <Img className="display-image"
+          fluid={displayImage.childImageSharp.fluid}
+        />}
+          
           <div
             className={`${html ? "markdown" : ""}`}
             dangerouslySetInnerHTML={{ __html: html }}
@@ -37,6 +43,13 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        displayImage {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid_noBase64
+            }
+          }
+        }
         }
         
       }

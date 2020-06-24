@@ -16,6 +16,7 @@
 @import "./images.scss";
 @import "./icons.scss";
 @import "./navbar.scss";
+@import "./utils.scss";
 
 @for $i from 1 through 6 {
     h#{7 - $i} {
@@ -31,8 +32,34 @@
     height: 100px;
   }
   a {
-    @extend .is-black; 
+    @extend .is-blue; 
   }
+  a:hover {
+    border-bottom: 1px solid #f08f00 !important;
+    text-decoration: none !important;
+    transform: scale(1.05);
+  }
+  a:visited, a:focus, a:active {
+    text-decoration: none !important;
+  }
+  pre code {
+    @extend .is-black;
+    background: none;
+    display: block;
+    line-height: 1.42;
+    width: auto;
+  }
+
+  pre {
+    @extend .is-xq-bg;
+    border-radius: 3px;
+    font-size: 1rem;
+    overflow-x: auto;
+    padding: 1.45rem;
+    word-wrap: break-word;
+    font-weight: normal;
+
+}
 }
 *
 {
@@ -110,6 +137,10 @@ h6 {
     margin-right: 0;
     font-weight: bold;
   }
+
+p {
+  font-size: 1em;
+}
 
 hr {
     margin-top: 2vw;

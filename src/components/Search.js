@@ -17,16 +17,19 @@ export class Search extends Component {
     render() {
         console.log(this.state.results)
         return (
-            <div className="pad-9-l">
-                <input type="text" value={this.state.query} onChange={this.search} className="search-box is-light-grey-bg is-black" placeholder="Search for recipes or tech articles.."/>
+            <div className="row container-small pad-8-l">
+            <div className="col-xs-12">
+
+            <label for="search"> <h3 className="is-black">Search site </h3></label>
+                <input id="search" type="text" value={this.state.query} onChange={this.search} className="search-box" placeholder="Search for recipes or tech articles.."/>
                 <ul className="plain-ul"> 
                     { 
                         this.state.results.map(function(page) {
                                 return ( <li>
-                                    <Link to={page.path} className="link margin-15-b" id="path">
+                                    <Link to={page.path} className="margin-15-b" id="path">
                                         <div className="grow row">
                                         <div className="pad-2-t">
-                                            <h2 className="link margin-3-b margin-0-t">{page.title}</h2>
+                                            <h2 className="margin-3-b margin-0-t search-link">{page.title}</h2>
                                         </div>
                                         </div>
                                     </Link>
@@ -36,6 +39,7 @@ export class Search extends Component {
                     }
                     
                 </ul>
+            </div>
             </div>
         );
     }

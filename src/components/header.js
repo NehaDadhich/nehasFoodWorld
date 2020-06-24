@@ -1,8 +1,10 @@
-import React from "react";
-import Logo from "../images/nehasFoodWorld.png";
+import React, {useState, useEffect} from "react";
 import {Link} from "gatsby";
+import Navbar from "../components/navbar";
+import Logo from "../images/nehasFoodWorld.png";
 import useDarkMode from "use-dark-mode";
 import {faBars} from "@fortawesome/free-solid-svg-icons"
+import {faTimes} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Header() {
@@ -10,64 +12,48 @@ export default function Header() {
   const toggleDarkMode = function(){
     if(darkMode.value) {
         darkMode.disable();
-        document.getElementById("darkModeButton").innerHTML = "🌙";
     }
     else {
       darkMode.enable();
-      document.getElementById("darkModeButton").innerHTML = "☀️";
     }
   }
+  const [navbarOpen, setNavbarOpen] = useState(false)
+  useEffect(() => {
+    window.addEventListener("resize", () => {
+      if (navbarOpen) {
+        setNavbarOpen(false)
+      }
+    })
+  })
     return (
       <>
-      <div className="row is-black pad-3-t">
-        <div className="col-md-8 col-xs-12">
+      <div className="row flexbox is-black pad-2-t pad-2-b">
+        <div className="col-xs-8 col-sm-8 col-md-9 pad-5-l">
       <Link to="/">
           <img alt="Neha's Food World Logo" src={Logo} class="logo"/>
         </Link>
         </div>
-        <div class="col-md-4 col-xs-12">
-        <nav class="navbar is-black">
-    <label class="navbar-toggle" id="js-navbar-toggle" for="chkToggle">
-    <FontAwesomeIcon className="is-black" icon={faBars} />
-        </label>
-    <input type="checkbox" id="chkToggle"></input>
-    <ul class="main-nav" id="js-menu">
-      <li>
-        <div class="nav-links">
-        <Link className="nav-link nav-link-style" to="/about/" activeStyle={ navLinkActive}> About </Link>
-          </div>
-      </li>
-      <li>
-      <div class="nav-links">
-      <Link className="nav-link nav-link-style" to="/tech/" activeStyle={ navLinkActive}> Making of </Link>
-          </div>
-      </li>
-      <li>
-      <div class="nav-links navButton">
-      <button id="darkModeButton" className="darkModeBtn" onClick={toggleDarkMode}> ☀️ </button>
-          </div>
-      </li>
-    </ul>
-  </nav>
-  </div>
+        
+        <div class="col-xs-2 col-sm-2 col-md-2"> 
+        <button id="darkModeButton" className="darkModeBtn" onClick={toggleDarkMode} style={{float: "right"}}> {darkMode.value ?
+            <div className="theme-emoji-dark-div"> {"☀️"} </div>
+              : <div className="theme-emoji-light-div"> {"🌙" } </div>} 
+         </button>
+         </div>
+         <div className="col-xs-2 col-sm-2 col-md-1">
+         <button className="toggleIcon" onClick={() => setNavbarOpen(!navbarOpen)}> 
+          {navbarOpen ? 
+          <FontAwesomeIcon className="is-black" icon={faTimes}/>  : 
+          <FontAwesomeIcon className="is-black" icon={faBars}/> }
+        
+        </button>
+           </div>
+      
+         <div> {navbarOpen &&  <Navbar />} </div>
   </div>
   </>
     );
 }
 
-const navLinkActive = {
-    borderBottom: "1px solid #f08f00"
-}
 
-function classToggle() {
-  const navs = document.querySelectorAll('.Navbar__Items__Hidden')
-  
-  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
-}
-
-var element = .querySelector('.Navbar__Link-toggle');
-//element.addEventListener('click', classToggle);
-if(element){
-  element.addEventListener('click', classToggle);
-}
   

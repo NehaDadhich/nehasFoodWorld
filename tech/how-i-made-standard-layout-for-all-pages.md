@@ -1,7 +1,0 @@
----
-path: "/how-i-made-standard-layout-for-all-pages"
-title: "How I made standard layout for all pages"
-date: 2020-06-01T00:00:00.000Z
-tags: ["Standard Layout", "Bhat", "Aloo", "Potato", "Peas", "Mattar"]
-type: "tech"
----

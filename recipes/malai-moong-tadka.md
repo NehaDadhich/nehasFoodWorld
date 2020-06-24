@@ -8,8 +8,6 @@ tags: ["Malai", "Moong", "Cream", "Tadka"]
 type: "recipe"
 ---
 
-![Malai Moong Tadka](./images/malai-moong-tadka.png) 
-
 Whole moong dal or mung bean or green gram is a very healthy, high protein gram widely used in Indian cooking. My grandmother makes it quite often and we enjoy it with hot steaming rice. One day, I thought to give the Moong tadka a creamy twist and it was appreciated by everyone. Malai Moong Tadka is a creamy, delicious curry with aromatic spices.
 
 **Serves:** 4\
