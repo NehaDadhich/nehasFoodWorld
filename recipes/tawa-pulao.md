@@ -31,7 +31,7 @@ Tawa Pulao is rice tossed with vegetables and spices. It is a quick and a beginn
 - 1/2 tsp cumin seeds
 - 1/2 tsp tumeric powder
 - 1/2 tsp red chilly powder
-- <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank" rel="noopener noreferrer"> 1 tsp garam masala or ground spices </a>
+- <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank" rel="noopener noreferrer" class="link"> 1 tsp garam masala or ground spices </a>
 - 1 tsp pav bhaji masala
 - salt to taste
 

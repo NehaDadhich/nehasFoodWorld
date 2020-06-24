@@ -25,6 +25,7 @@
 
 .search-link {
   @extend .is-black;
+  text-decoration: none !important;
 }
 
 .search-link:hover {

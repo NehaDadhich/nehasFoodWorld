@@ -31,17 +31,6 @@
     margin-right: auto;
     height: 100px;
   }
-  a {
-    @extend .is-blue; 
-  }
-  a:hover {
-    border-bottom: 1px solid #f08f00 !important;
-    text-decoration: none !important;
-    transform: scale(1.05);
-  }
-  a:visited, a:focus, a:active {
-    text-decoration: none !important;
-  }
   pre code {
     @extend .is-black;
     background: none;

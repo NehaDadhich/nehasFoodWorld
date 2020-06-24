@@ -26,10 +26,10 @@ export class Search extends Component {
                     { 
                         this.state.results.map(function(page) {
                                 return ( <li>
-                                    <Link to={page.path} className="margin-15-b" id="path">
+                                    <Link to={page.path} className="margin-15-b search-link" id="path">
                                         <div className="grow row">
                                         <div className="pad-2-t">
-                                            <h2 className="margin-3-b margin-0-t search-link">{page.title}</h2>
+                                            <h2 className="margin-3-b margin-0-t">{page.title}</h2>
                                         </div>
                                         </div>
                                     </Link>
