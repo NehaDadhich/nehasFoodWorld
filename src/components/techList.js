@@ -52,7 +52,7 @@ export default function techArticles() {
               <div className="line margin-3-t margin-3-b" />
             </div>
 
-            <div className="row flexbox margin-0-l pad-5-t pad-5-r pad-5-b container">
+            <div className="row flexbox margin-0-l pad-5-t pad-5-r pad-5-b">
               {
                 
               edges.map(item => (

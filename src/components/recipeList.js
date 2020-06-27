@@ -30,6 +30,7 @@ export default function Projects() {
   (
     filter: { frontmatter: {type: {eq: "recipe"}} }
     sort: { fields: [frontmatter___date], order: DESC }
+
   ) {
             edges {
               node {
