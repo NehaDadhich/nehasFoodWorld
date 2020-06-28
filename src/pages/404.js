@@ -11,7 +11,7 @@ export default function lost() {
         <div className="row container-small pad-20-t pad-20-b">
           <div className="col-xs-12 col-md-6 pad-10-l">
             <h1 className="is-hero-menu margin-0 is-black">Oops!</h1>
-            <h4 className="is-hero-sub-text is-black">No recipes here...</h4>
+            <h4 className="is-hero-sub-text is-black">Something went wrong here...</h4>
             <Link to="/">
               <button className="custom-button margin-3-t">Take me home</button>
             </Link>

@@ -8,7 +8,7 @@ tags: ["Rice", "Vegetables", "Tawa", "Pan"]
 type: "recipe"
 ---
 
-Tawa Pulao is rice tossed with vegetables and spices. It is a quick and a beginner friendly recipe. One day, my sister suprised us by making Tawa Pulao. This dish is amazing with fresh vegetables, you can use frozen vegetables for instant cooking.
+Tawa Pulao is rice tossed with vegetables and spices. It is a quick and a beginner-friendly recipe. One day, my sister surprised us by making Tawa Pulao. This dish is amazing with fresh vegetables, you can use frozen vegetables for instant cooking.
 
 **Serves:** 4\
 **Cooking Time:** 30 to 45 minutes
@@ -29,7 +29,7 @@ Tawa Pulao is rice tossed with vegetables and spices. It is a quick and a beginn
 - 1 tsp unsalted butter
 - 1/2 tsp mustard seeds
 - 1/2 tsp cumin seeds
-- 1/2 tsp tumeric powder
+- 1/2 tsp turmeric powder
 - 1/2 tsp red chilly powder
 - <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank" rel="noopener noreferrer" class="link"> 1 tsp garam masala or ground spices </a>
 - 1 tsp pav bhaji masala
@@ -42,9 +42,9 @@ Tawa Pulao is rice tossed with vegetables and spices. It is a quick and a beginn
 - Then add the cumin seeds and let them crackle. 
 - Then add the onions, ginger, garlic and green chillies. Cook till onions are almost done. 
 - Add chopped carrot, beans, potatoes, peas and corn to it. 
-Add salt at this stage, this will speed up the cooking. 
+Add little salt at this stage, this will speed up the cooking. 
 - Once the vegetables are nearly done, add the chopped tomatoes.
-- Add tumeric powder, red chilly powder, garam masala and pav bhaji masala to it. Cook for 2 to 3 minutes.
+- Add turmeric powder, red chilly powder, garam masala, pav bhaji masala and remaining salt to it. Cook for 2 to 3 minutes.
 - Once the tomatoes are done, add the cooked rice and cook for 3 to 5 minutes.
 
-Tawa Pulao is ready. Enjoy it with yogurt or on its own. 
+Tawa Pulao is ready.

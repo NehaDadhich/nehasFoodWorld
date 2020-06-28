@@ -7,12 +7,12 @@ export default function navbar(){
     <ul class="main-nav pad-0">
       <li>
         <div class="nav-links">
-        <Link className="nav-link nav-link-style is-black" to="/about/" activeStyle={ navLinkActive}> About </Link>
+        <Link className="nav-link is-black" to="/about/" activeStyle={ navLinkActive}> About </Link>
           </div>
       </li>
       <li>
       <div class="nav-links">
-      <Link className="nav-link nav-link-style is-black" to="/tech/" activeStyle={ navLinkActive}> Making of </Link>
+      <Link className="nav-link is-black" to="/makingOf/" activeStyle={ navLinkActive}> Making of </Link>
           </div>
       </li>
     </ul>

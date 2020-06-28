@@ -18,6 +18,7 @@
 @import "./navbar.scss";
 @import "./utils.scss";
 @import "./code.scss";
+@import "./footer.scss";
 
 @for $i from 1 through 6 {
     h#{7 - $i} {
@@ -32,24 +33,6 @@
     margin-right: auto;
     height: 100px;
   }
-//   pre code {
-//     @extend .is-black;
-//     background: none;
-//     display: block;
-//     line-height: 1.42;
-//     width: auto;
-//   }
-
-//   pre {
-//     @extend .is-xq-bg;
-//     border-radius: 3px;
-//     font-size: 1rem;
-//     overflow-x: auto;
-//     padding: 1.45rem;
-//     word-wrap: break-word;
-//     font-weight: normal;
-
-// }
 }
 *
 {
@@ -143,12 +126,6 @@ hr {
 
 .small-text {
   font-size: 0.8em;
-}
-
-.footer {
-    text-align: center;
-    font-family: Lato;
-    padding: 10px;
 }
 
 

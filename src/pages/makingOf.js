@@ -4,12 +4,12 @@ import SEO from "../components/seo";
 import TechList from "../components/techList";
 
 
-export default function tech() {
+export default function makingOf() {
     return (
     <>
     <Layout className="is-white-bg">
         <div>
-            <SEO title="Tech Articles" />
+            <SEO title="Making Of" />
         <div>
             < TechList />
         </div>

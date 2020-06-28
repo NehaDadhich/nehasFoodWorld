@@ -12,3 +12,7 @@
   .search-box:focus {
     outline: 0;
   }
+
+.dark-mode .search-box {
+  border: 2px solid #ffb925;
+}
