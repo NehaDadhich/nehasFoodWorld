@@ -1,6 +1,0 @@
-1. Is tooltip required for change theme button or it can be understood by the user? ✅
-2. Search does not give results when new files are added. It usually takes a few days. Is it normal?✅
-3. Making the displayImage responsive and showing it on the example list page
-4. Word break of text in example list✅
-5. Having two images in a row✅
-6. Any other feedback on the website

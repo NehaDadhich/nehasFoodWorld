@@ -48,7 +48,7 @@ export default function techArticles() {
         return (
           <div className="row container-small pad-10-b pad-8-l">
             <div className="col-xs-12">
-              <h2 className="margin-0-t is-black" >Latest tech articles</h2>
+              <h2 className="margin-0-t is-pink" >Making of</h2>
               <div className="line margin-3-t margin-3-b" />
             </div>
 
@@ -56,7 +56,7 @@ export default function techArticles() {
               {
                 
               edges.map(item => (
-                <div className="col-xs-12 col-md-6">
+                <div className="col-xs-12 col-md-8">
                 <div>
                 <Label {...item.node.frontmatter} className="is-black"/>
                 </div>

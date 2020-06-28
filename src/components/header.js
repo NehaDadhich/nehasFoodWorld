@@ -11,7 +11,7 @@ export default function Header() {
   const darkMode = useDarkMode(false);
   const toggleDarkMode = function(){
     if(darkMode.value) {
-        darkMode.disable();
+      darkMode.disable();
     }
     else {
       darkMode.enable();
@@ -38,7 +38,7 @@ export default function Header() {
         <button id="darkModeButton" className="darkModeBtn" onClick={toggleDarkMode} style={{float: "right"}}> {darkMode.value ?
             <div className="theme-emoji-dark-div"> {"☀️"} </div>
               : <div className="theme-emoji-light-div"> {"🌙" } </div>} 
-         </button>
+         </button> 
          </div>
          <div className="col-xs-2 col-sm-2 col-md-1">
          <button className="toggleIcon" onClick={() => setNavbarOpen(!navbarOpen)}> 

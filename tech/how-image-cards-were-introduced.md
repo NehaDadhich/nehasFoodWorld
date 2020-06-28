@@ -1,20 +1,21 @@
 ---
-path: "/how-image-cards-were-introduced"
-title: "How image cards were introduced"
-date: 2020-06-01T00:00:00.000Z
+path: "/making-of-image-cards"
+title: "Image Cards"
+date: 2020-06-20T00:00:00.000Z
 tags: ["Image Cards","Gatsby images"]
 type: "tech"
 ---
+*Note:* The code can be viewed at <a href="https://github.com/NehaDadhich/nehasFoodWorld" target="_blank" rel="noopener noreferrer" class="link">  Neha's Food World Github</a>.
 
-I wanted the home page to display the images from the markdown as cards with description of images. This articles explains how this was achieved. 
+One of the ideas was that the home page will display the recipes as image cards with description and date. This article explains how this was achieved.
 
-Firstly, I installed the following dependencies through npm: 
+Firstly, the following dependencies were installed through npm:
 - gatsby-remark-images
 - gatsby-remark-copy-linked-files
 - gatsby-transformer-sharp
 - gatsby-plugin-sharp
 
-The recipeList.js file is responsible for displaying the list of latest recipes on the home page. I edited the graphQL query to fetch the image, description, title and date as following: 
+The recipeList.js file is responsible for displaying the list of latest recipes on the home page. The GraphQL query was edited to fetch the image, description, title and date as:
 
 ```Javascript{numberLines: true}
   query={graphql`
@@ -46,20 +47,20 @@ The recipeList.js file is responsible for displaying the list of latest recipes 
         }
       `} 
 ```
-This was exported to edges as follows
+This was exported to edges as:
 
 ```Javascript{numberLines: true}
 data => {
         let { edges } = data.allMarkdownRemark;
 ```
 
-And then passed to a Label component as follows: 
+And then passed to a Label component as: 
 
 ```Javascript{numberLines: true}
   <Label {...item.node.frontmatter} className="is-black"/>
 ```
 
-The Lable component creates the image card as: 
+The Label component creates the image card as: 
 
 ```Javascript{numberLines: true}
 export const Label = ({ title, path, description, displayImage, date}) => (
