@@ -1,12 +1,6 @@
 .custom-full-width-button {
     display: block;
     width: 95%;
-    // background-color: #4CAF50;
-    // color: white;
-    // padding: 14px 28px;
-    // font-size: 16px;
-    // cursor: pointer;
-    // text-align: center;
 }
 
 .custom-button {
@@ -39,10 +33,6 @@
 .custom-full-width-button:hover,
 .custom-button:hover {
     background-color: #0f0f0f;
-    border-style: solid;
-    border-width: 2px;
-    margin: -1px;
-    border-color: #ffa31a;
     color: white;
     cursor: pointer;
 }
@@ -50,7 +40,11 @@
 
 
 .custom-full-width-button:focus,
-.custom-button:focus {
+.custom-button:focus, 
+.dark-mode
+.custom-full-width-button:focus,
+.custom-button:focus
+ {
     background-color: #ED6870;
     border-style: solid;
     border-width: 2px;

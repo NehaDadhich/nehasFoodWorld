@@ -19,13 +19,13 @@ export default function Start() {
         <div className="pad-5-b">
             {recipeQuery()}
             <div className="pad-7-l">
-            <Link to="/recipes"> <button className="custom-full-width-button"> Yum, I want more. </button> </Link>
+            <Link className="button-link" to="/recipes"> <button className="custom-full-width-button"> Yum, I want more. </button> </Link>
             </div>
             </div>
         <div className="pad-1-t pad-5-b">
         <MakingOfList limit={2} />
         <div className="pad-7-l">
-        <Link to="/makingOf"> <button className="custom-full-width-button"> Wow, show me tech. </button> </Link>
+        <Link className="button-link" to="/makingOf"> <button className="custom-full-width-button"> Wow, show me tech. </button> </Link>
             </div>
          </div>
         </div>

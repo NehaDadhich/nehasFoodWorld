@@ -37,3 +37,11 @@
   text-decoration: none !important;
   @extend .is-black;
 }
+
+.button-link,
+.button-link:hover, 
+.button-link:focus,
+.button-link:visited,
+.button-link:active {
+  text-decoration: none !important;
+}
