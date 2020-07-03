@@ -1,13 +1,30 @@
+.custom-full-width-button {
+    display: block;
+    width: 95%;
+    // background-color: #4CAF50;
+    // color: white;
+    // padding: 14px 28px;
+    // font-size: 16px;
+    // cursor: pointer;
+    // text-align: center;
+}
+
+.custom-button {
+    max-width: 250px;
+}
+
+.custom-full-width-button,
 .custom-button {
     background-color: #f08f00;
     color: white;
-    max-width: 250px;
     padding:15px;
     text-align: center;
     font-family: Lato;
     border: 1px solid #ffa31a;
     margin-bottom: 2px;
 }
+
+.custom-full-width-button:hover,
 .custom-button:hover {
     background-color: white;
     border-style: solid;
@@ -18,19 +35,35 @@
     cursor: pointer;
 }
 
-.custom-button:focus {
-    background-color: #f06348;
+.dark-mode
+.custom-full-width-button:hover,
+.custom-button:hover {
+    background-color: #0f0f0f;
     border-style: solid;
     border-width: 2px;
     margin: -1px;
-    border-color: #f05f42;
+    border-color: #ffa31a;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+.custom-full-width-button:focus,
+.custom-button:focus {
+    background-color: #ED6870;
+    border-style: solid;
+    border-width: 2px;
+    margin: -1px;
+    border-color: #ED6870;
     color: white;
     cursor: pointer;
     outline: 0;
 }
 
-  .darkModeBtn,
-.toggleIcon {
+.darkModeBtn,
+.toggleIcon,
+.navbarBtn {
     height: 30px;
     border: none;
     background-color: inherit;

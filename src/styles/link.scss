@@ -14,12 +14,11 @@
 
 .nav-link {
   transition: all .2s ease-in-out;
-  font-weight: 100;
   text-decoration: none;
 }
 
 .nav-link:hover {
-  border-bottom: 1px solid #f08f00 !important;
+  border-bottom: 2px solid #f08f00 !important;
   transform: scale(1.05);
 }
 

@@ -21,7 +21,7 @@ export class Search extends Component {
             <div className="col-xs-12">
 
             <label for="search"> <h3 className="is-black">Search site </h3></label>
-                <input id="search" type="text" value={this.state.query} onChange={this.search} className="search-box" placeholder="Search for recipes or tech articles.."/>
+                <input id="search" type="text" value={this.state.query} onChange={this.search} className="search-box is-white-bg is-black" placeholder="Search for recipes or tech articles.."/>
                 <ul className="plain-ul"> 
                     { 
                         this.state.results.map(function(page) {
