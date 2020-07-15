@@ -3,6 +3,8 @@ const path = require(`path`);
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
   const pageTemplate = path.resolve(`./src/templates/pageTemplate.js`);
+  const recipeListTemplate = path.resolve(`./src/components/recipeList.js`);
+
 
   const result = await graphql(`
     {
@@ -24,8 +26,25 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
     return;
   }
-  
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+
+  const items = result.data.allMarkdownRemark.edges;
+  const itemsPerPage = 3;
+  const numberOfPages = Math.ceil(items.length/ itemsPerPage);
+
+  Array.from({length: numberOfPages}).forEach((_,i) => {
+    createPage({
+      path: i === 0 ? `/recipes` : `/recipes/${i + 1}`,
+      component: recipeListTemplate,
+      context: {
+        limit: itemsPerPage,
+        skip: i * itemsPerPage,
+        numberOfPages,
+        currentPage: i + 1,
+      },
+    });
+  });
+
+  items.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
       component: pageTemplate
