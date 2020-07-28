@@ -28,37 +28,18 @@ class Recipes extends Component {
             
           }
         </div> 
-        <ul
-      style={{
-        display: 'flex',
-        flexWrap: 'wrap',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        listStyle: 'none',
-        padding: 0,
-      }}
-    >
+        <div className="center-div">
       {Array.from({ length: numberOfPages - 1}, (_, i) => (
-        <li
-          key={`pagination-number${i + 1}`}
-          style={{
-            margin: 0,
-          }}
-        >
-          <Link
+          <Link className="button-link margin-3-l"
             to={`/recipes/${i === 0 ? '' : i + 1}`}
-            style={{
-              padding: 4,
-              textDecoration: 'none',
-              color: i + 1 === currentPage ? '#ffffff' : '',
-              background: i + 1 === currentPage ? '#007acc' : '',
-            }}
           >
+            <button className="custom-button">
             {i + 1}
+
+          </button>
           </Link>
-        </li>
       ))}
-    </ul>
+      </div>
       </div>
       </Layout>
     );
