@@ -30,7 +30,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   const items = result.data.allMarkdownRemark.edges;
-  const itemsPerPage = 3;
+  const itemsPerPage = 6;
   const numberOfPages = Math.ceil(items.length/ itemsPerPage);
 
   Array.from({length: numberOfPages}).forEach((_,i) => {
