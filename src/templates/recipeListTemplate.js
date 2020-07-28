@@ -1,28 +1,31 @@
 import React, { Component } from "react";
 import { graphql, Link } from "gatsby";
 import RecipePreview from "../components/recipePreview";
+import Layout from "../components/layout";
 
 class Recipes extends Component {
   render() {
-    const  data   = this.props
-    console.log("Data " + data)
+    const  { data }  = this.props
     const allMarkdownRemark = data.allMarkdownRemark
-    console.log("AllMarkDown " + allMarkdownRemark)
     const posts = allMarkdownRemark.edges
-    const { currentPage, numPages } = this.props.pageContext
+    const { currentPage, numberOfPages } = this.props.pageContext
     return (
+      <Layout>
       <div className="pad-2-b pad-8-l margin-0-b">
           <h2 className="margin-0-t is-black" >Latest recipes</h2>
 
         <div className="row margin-0-l pad-5-t pad-5-r">
           {
-          posts.map(({item}) => (
+          posts.map(({node}) => {
+            console.log({node})
+            return (
             <div className="col-xs-12 col-md-4">
             <div>
-            <RecipePreview {...item.node.frontmatter} className="is-black"/>
+            <RecipePreview {...node.frontmatter} className="is-black"/>
             </div>
             </div>
-          ))
+          )})
+            
           }
         </div> 
         <ul
@@ -35,7 +38,7 @@ class Recipes extends Component {
         padding: 0,
       }}
     >
-      {Array.from({ length: numPages }, (_, i) => (
+      {Array.from({ length: numberOfPages - 1}, (_, i) => (
         <li
           key={`pagination-number${i + 1}`}
           style={{
@@ -43,7 +46,7 @@ class Recipes extends Component {
           }}
         >
           <Link
-            to={`/${i === 0 ? '' : i + 1}`}
+            to={`/recipes/${i === 0 ? '' : i + 1}`}
             style={{
               padding: 4,
               textDecoration: 'none',
@@ -57,6 +60,7 @@ class Recipes extends Component {
       ))}
     </ul>
       </div>
+      </Layout>
     );
   }
 }
@@ -64,7 +68,15 @@ class Recipes extends Component {
 export default Recipes
 
 export const recipeQuery = graphql`
-query Recipes($skip: Int!, $limit: Int!) {
+query Recipes($skip: Int!, $limit: Int!, $slug: String!) {
+  sitePage(path: { eq: $slug }) {
+    context {
+      limit
+      skip
+      numberOfPages
+      currentPage
+    }
+  }
 allMarkdownRemark(
     filter: { frontmatter: {type: {eq: "recipe"}} }
     sort: { fields: [frontmatter___date], order: DESC }
@@ -76,6 +88,7 @@ allMarkdownRemark(
         frontmatter {
           path
           title
+          tags
           description
           displayImage {
             childImageSharp {

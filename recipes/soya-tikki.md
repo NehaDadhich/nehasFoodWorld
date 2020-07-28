@@ -1,28 +1,31 @@
 ---
-path: "/khatta-meetha-poha"
-title: "Khatta Meetha Poha"
+path: "/soya-mutter-cutlet"
+title: "Soya Mutter Cultet"
 displayImage: ./images/khatta-meetha-poha.png
 date: 2020-06-02T00:00:00.000Z
-description: "Flattened rice with an amazing sweet and sour contrasting combination."
-tags: ["Poha", "Flattened Rice"]
+description: "A high protein snack served with mint chutney"
+tags: ["Soya", "Cutlet"]
 type: "recipe"
 ---
 
-Khatta means sour in Hindi and Meetha means sweet, this dish is a unique combination of contrasting flavours. Poha is flattened rice which is very easy to cook. Tempering is an important element of poha as it adds an amazing texture to it. My mom makes it quite frequently and she taught me this recipe. 
+Soya Mutter Cutlet are simple to make high protein snack. I make them quite often for a simple healthy lunch or dinner. In this recipe, the cutlets are served with mint and yogurt chutney. It is optional, you can serve it with our favourite sauce.
 
 **Serves:** 4\
-**Cooking Time:** 15 to 20 minutes
+**Cooking Time:** 30 to 40 minutes
 
 ###Ingredients
-- 2 cups poha (flattened rice)
-- 3 tablespoon oil
-- 8 to 10 curry leaves
-- 1 tea spoon split black lentils (urad dal)
-- 3 tablespoons roasted gram dal
-- 5 to 6 green chillies, keep two aside and chop the remaining in about 1/2 inch size
-- 1/2 tea spoon cumin seeds
-- 1/2 tea spoon mustard seeds
-- 1/2 tea spoon turmeric powder
+*Soya Mutter Cutlet*
+- 1.5 cup soya chunks
+- 1 cup green peas
+- 1 large potato, boiled
+- 12 to 15 curry leaves
+- 2 tablespoon sesame seeds
+- 2 tablespoon cumin seeds
+- <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank" rel="noopener noreferrer" class="link"> 1 tsp garam masala or ground spices </a>
+- 1 
+- 1/2 tsp cumin seeds
+- 1/2 tsp mustard seeds
+- 1/2 tsp turmeric powder
 - 1 large lemon
 - 1 tablespoon sugar
 - salt to taste

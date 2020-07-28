@@ -49,6 +49,7 @@ limit: 3
         frontmatter {
           path
           title
+          tags
           description
           displayImage {
             childImageSharp {

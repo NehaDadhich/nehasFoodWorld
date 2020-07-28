@@ -13,3 +13,16 @@
   text-shadow: 0 0 0 white;
 }
 
+.tags {
+  @extend .is-pink-bg;
+  display: inline;
+  padding: 4px;
+  border-radius: 12%;
+  margin-right: 3px;
+  font-size: 0.8em;
+}
+
+.tags:hover {
+  opacity: 0.8;
+}
+
