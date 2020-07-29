@@ -12,10 +12,9 @@
 }
 
 .display-image {
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     height: 300px;
-    object-fit: fill;
 }
 
   .image-card {
@@ -30,6 +29,11 @@
       .image-card {
         height: 480px;
       }
+
+      .display-image {
+        width: 40%;
+      }
+
   }
 
 .image-card:hover, 

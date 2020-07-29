@@ -8,7 +8,7 @@ class Recipes extends Component {
     const  { data }  = this.props
     const allMarkdownRemark = data.allMarkdownRemark
     const posts = allMarkdownRemark.edges
-    const { currentPage, numberOfPages } = this.props.pageContext
+    const { numberOfPages } = this.props.pageContext
     return (
       <Layout>
       <div className="pad-2-b pad-8-l margin-0-b">

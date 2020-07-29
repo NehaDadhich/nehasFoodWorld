@@ -45,3 +45,8 @@
 .button-link:active {
   text-decoration: none !important;
 }
+
+.tag-link {
+  @extend .is-black;
+  text-decoration: none;
+}
