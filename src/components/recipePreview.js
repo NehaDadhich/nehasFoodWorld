@@ -14,7 +14,9 @@ export default function RecipePreview ({title, path, tags, description, displayI
         />
       <div className="image-card-container is-black">
         <h2> <strong>{title} </strong></h2> 
+        <div className="tags-container">
         <div className="tags-container"> {styleTags(tags)} </div>
+        </div>
         <p className="margin-1-b">{description}</p>
         <p className="small-text">{date}</p>
       </div>

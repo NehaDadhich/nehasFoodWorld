@@ -4,7 +4,7 @@ title: "Aloo Matar Bhat"
 displayImage: ./images/aloo-matar-bhat.png
 date: 2020-06-03T00:00:00.000Z
 description: "Aromatic rice spiced with potato and peas, a perfect dish for lunch or dinner."
-tags: ["Rice", "Lunch", "Dinner"]
+tags: ["Rice", "Peas", "Potato", "Lunch", "Dinner"]
 type: "recipe"
 ---
 
@@ -18,17 +18,17 @@ Green peas, potatoes and rice are like a perfect combination which always turns 
 - 2 medium potatoes, peeled and cut in small pieces
 - 1/2 cup frozen peas ( fresh will be amazing but I didn't have them. )
 - 1 medium tomato finely chopped
-- 3 tea spoon oil
+- 3 teaspoon oil
 - 2 bay leaves
 - 3 to 4 cloves
-- 1/2 tea spoon mustard seeds
-- 1/2 tea spoon cumin seeds
-- 1/2 tea spoon turmeric powder
-- 1 tea spoon red chilly powder
-- <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank" rel="noopener noreferrer" class="link"> 1 tea spoon garam masala or ground spices </a>
+- 1/2 teaspoon mustard seeds
+- 1/2 teaspoon cumin seeds
+- 1/2 teaspoon turmeric powder
+- 1 teaspoon red chilly powder
+- <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank" rel="noopener noreferrer" class="link"> 1 teaspoon garam masala or ground spices </a>
 - salt to taste
-- 1/4 tea spoon butter (only if frozen peas are used)
-- 2 tea spoon coriander for garnishing
+- 1/4 teaspoon butter (only if frozen peas are used)
+- 2 teaspoon coriander for garnishing
 
 
 ###Procedure

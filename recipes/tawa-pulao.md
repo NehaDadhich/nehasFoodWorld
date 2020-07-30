@@ -4,7 +4,7 @@ title: "Tawa Pulao"
 displayImage: ./images/tawa-pulao.png
 date: 2020-06-01T00:00:00.000Z
 description: "Spiced vegetable rice cooked in a pan. A healthy meal for lunch or dinner."
-tags: ["Rice", "Vegetables", "Tawa", "Pan"]
+tags: ["Rice", "Vegetables", "Lunch", "Dinner"]
 type: "recipe"
 ---
 
@@ -22,17 +22,17 @@ Tawa Pulao is rice tossed with vegetables and spices. It is a quick and a beginn
 - 2 tomatoes, finely chopped
 - 1/2 cup peas
 - 1/2 cup corn
-- 1/2 tea spoon ginger, finely chopped
-- 1/2 tea spoon garlic, finely chopped
-- 1/2 tea spoon green chillies, finely chopped
-- 2 tea spoon oil
-- 1 tea spoon unsalted butter
-- 1/2 tea spoon mustard seeds
-- 1/2 tea spoon cumin seeds
-- 1/2 tea spoon turmeric powder
-- 1/2 tea spoon red chilly powder
-- <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank" rel="noopener noreferrer" class="link"> 1 tsp garam masala or ground spices </a>
-- 1 tea spoon pav bhaji masala
+- 1/2 teaspoon ginger, finely chopped
+- 1/2 teaspoon garlic, finely chopped
+- 1/2 teaspoon green chillies, finely chopped
+- 2 teaspoon oil
+- 1 teaspoon unsalted butter
+- 1/2 teaspoon mustard seeds
+- 1/2 teaspoon cumin seeds
+- 1/2 teaspoon turmeric powder
+- 1/2 teaspoon red chilly powder
+- <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank" rel="noopener noreferrer" class="link"> 1 teaspoon garam masala or ground spices </a>
+- 1 teaspoon pav bhaji masala
 - salt to taste
 
 

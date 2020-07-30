@@ -3,16 +3,6 @@
     padding: 2px 20px;
 }
 
-.theme-emoji-light-div {
-    color: transparent;  
-  text-shadow: 0 0 0 #0f0f0f;
-}
-
-.theme-emoji-dark-div {
-    color: transparent;  
-  text-shadow: 0 0 0 white;
-}
-
 .tags-container {
   display: flex;
   flex-wrap: wrap;
@@ -22,8 +12,9 @@
   @extend .is-pink-bg;
   display: inline;
   padding: 4px;
-  border-radius: 12%;
+  border-radius: 15%;
   margin-right: 3px;
+  margin-top: 3px;
   font-size: 0.8em;
 }
 

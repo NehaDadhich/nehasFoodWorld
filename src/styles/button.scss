@@ -56,10 +56,10 @@
     font-size: 1em;
 }
 
-.darkModeBtn:hover, 
-.toggleIcon:hover {
+.darkModeBtn:hover .navbar-icon, 
+.toggleIcon:hover .navbar-icon {
    outline: 0;
-   border: 1px solid #f08f00;
+   color: #f08f00 !important;
 }
 
 .darkModeBtn:focus, 
