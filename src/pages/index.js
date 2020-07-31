@@ -18,14 +18,14 @@ export default function Start() {
         </div>
         <div className="pad-5-b">
             {recipeQuery()}
-            <div className="pad-7-l">
-            <Link className="button-link" to="/recipes"> <button className="custom-full-width-button"> Yum, I want more. </button> </Link>
+            <div className="pad-15-r right-div">
+            <Link className="button-link" to="/recipes"> <button className="custom-button"> Yum, I want more. </button> </Link>
             </div>
             </div>
         <div className="pad-1-t pad-5-b">
         <MakingOfList limit={2} />
-        <div className="pad-7-l">
-        <Link className="button-link" to="/makingOf"> <button className="custom-full-width-button"> Wow, show me tech. </button> </Link>
+        <div className="pad-10-r right-div">
+        <Link className="button-link" to="/makingOf"> <button className="custom-button"> Wow, show me tech. </button> </Link>
             </div>
          </div>
         </div>
@@ -66,7 +66,6 @@ limit: 3
 }`}
 render={data => {
   let { edges } = data.allMarkdownRemark; 
-  console.log("This is edges" + edges)
   return  <>
   <div className="pad-5-l pad-5-r">
   <div className="pad-5-l pad-5-r pad-2-b">

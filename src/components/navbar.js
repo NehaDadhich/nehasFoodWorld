@@ -31,5 +31,5 @@ export default function navbar(){
 }
 
 const navLinkActive = {
-    borderBottom: "2px solid #f08f00"
+    borderBottom: "2px solid #BA83C4"
 }

@@ -5,8 +5,8 @@ import Logo from "../images/nehasFoodWorld.png";
 import useDarkMode from "use-dark-mode";
 import {faBars} from "@fortawesome/free-solid-svg-icons"
 import {faTimes} from "@fortawesome/free-solid-svg-icons"
-import {faSun} from "@fortawesome/free-regular-svg-icons"
-import {faMoon} from "@fortawesome/free-regular-svg-icons"
+import {faSun} from "@fortawesome/free-solid-svg-icons"
+import {faMoon} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Header() {

@@ -22,10 +22,23 @@
     overflow: initial;
     float: left; /* 1 */
     min-width: 100%; /* 2 */
+    font-size: 0.7em;
   }
     
   .gatsby-highlight pre[class*="language-"].line-numbers {
     padding: 0;
     padding-left: 2.8em;
     overflow: initial;
+    font-size: 0.7em;
   }
+
+  @media only screen and (min-width: 768px){
+    .gatsby-highlight pre[class*="language-"] {
+      font-size: 0.9em;
+    }
+
+    .gatsby-highlight pre[class*="language-"].line-numbers {
+      font-size: 0.9em;
+    }
+
+}

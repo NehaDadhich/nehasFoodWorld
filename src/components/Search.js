@@ -17,10 +17,11 @@ export class Search extends Component {
     render() {
         console.log(this.state.results)
         return (
-            <div className="row container-small pad-8-l">
+
+      <div className="pad-2-b pad-8-l margin-0-b">
             <div className="col-xs-12">
 
-            <label for="search"> <h3 className="is-black">Search site </h3></label>
+            <label for="search"> <h2 className="is-black">Search site </h2></label>
                 <input id="search" type="text" value={this.state.query} onChange={this.search} className="search-box is-white-bg is-black" placeholder="Search for recipes or tech articles.."/>
                 <ul className="plain-ul"> 
                     { 
@@ -40,7 +41,7 @@ export class Search extends Component {
                     
                 </ul>
             </div>
-            </div>
+        </div>
         );
     }
 

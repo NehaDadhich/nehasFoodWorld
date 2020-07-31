@@ -3,7 +3,14 @@
   text-decoration: none !important;
 }
 .link:hover {
-  border-bottom: 1px solid #f08f00 !important;
+  border-bottom: 1px solid #BA83C4 !important;
+  text-decoration: none !important;
+  transform: scale(1.05);
+}
+
+.dark-mode 
+.link:hover {
+  border-bottom: 1px solid #E7D5F9 !important;
   text-decoration: none !important;
   transform: scale(1.05);
 }
@@ -18,7 +25,7 @@
 }
 
 .nav-link:hover {
-  border-bottom: 2px solid #f08f00 !important;
+  border-bottom: 2px solid #BA83C4 !important;
   transform: scale(1.05);
 }
 
@@ -50,3 +57,16 @@
   @extend .is-black;
   text-decoration: none;
 }
+
+.social-icon {
+  @extend .is-black;
+}
+
+.social-icon:hover {
+  color: #254eaf !important;
+}
+
+.dark-mode .social-icon:hover  {
+  color: #2e96d3 !important;
+}
+

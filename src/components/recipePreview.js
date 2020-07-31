@@ -14,10 +14,8 @@ export default function RecipePreview ({title, path, tags, description, displayI
         />
       <div className="image-card-container is-black">
         <h2> <strong>{title} </strong></h2> 
-        <div className="tags-container">
         <div className="tags-container"> {styleTags(tags)} </div>
-        </div>
-        <p className="margin-1-b">{description}</p>
+        <p className="margin-1-b margin-0-t">{description}</p>
         <p className="small-text">{date}</p>
       </div>
     </div>
@@ -27,6 +25,6 @@ export default function RecipePreview ({title, path, tags, description, displayI
 
 export const styleTags = (tags) => 
 tags.map((tag) => (
-  <Link to={`/tags/${kebabCase(tag)}`} className="tag-link"> <p className="tags margin-1-tb margin-1-r">{tag} </p></Link>
+  <Link to={`/tags/${kebabCase(tag)}`} className="tag-link margin-3-b"> <p className="tags margin-1-tb margin-1-r">{tag} </p></Link>
 ))
 
