@@ -5,35 +5,39 @@
     height: 300px;
 }
 
+.card-row {
+  margin-bottom: 5px;
+  margin-right: 5px;
+  @extend .is-blue-bg;
+}
+
 .display-image {
-    width: 100%;
-    margin: 0 auto;
-    height: 600px;
-    object-fit: fill;
+    max-width: 100%;
+    height: 300px;
 }
 
   .image-card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 100%;
-    height: 465px;
+    height: 550px;
     border-radius: 5px;
   }
 
-  @media only screen and (min-width: 320px){
+  @media only screen and (min-width: 768px){
       .image-card {
-          height: 515px;
+        height: 480px;
       }
       .display-image {
-        height: 300px;
+        width: 40%;
       }
   }
 
 .image-card:hover, 
 .tech-card:hover {
-    -ms-transform: scale(1.1); /* IE 9 */
-    -webkit-transform: scale(1.1); /* Safari 3-8 */
-    transform: scale(1.1);
+    -ms-transform: scale(1.08); /* IE 9 */
+    -webkit-transform: scale(1.08); /* Safari 3-8 */
+    transform: scale(1.08);
   }
 
 .display-card-image {
@@ -51,6 +55,7 @@
     height: 165px;
     padding: 2px 16px;
     border-radius: 5px;
+    margin: 2px;
   }
 
   .dark-mode .image-card, .tech-card{

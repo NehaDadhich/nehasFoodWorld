@@ -5,6 +5,8 @@ import Logo from "../images/nehasFoodWorld.png";
 import useDarkMode from "use-dark-mode";
 import {faBars} from "@fortawesome/free-solid-svg-icons"
 import {faTimes} from "@fortawesome/free-solid-svg-icons"
+import {faSun} from "@fortawesome/free-solid-svg-icons"
+import {faMoon} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default function Header() {
@@ -36,15 +38,15 @@ export default function Header() {
         
         <div class="col-xs-2 col-sm-2 col-md-2"> 
         <button id="darkModeButton" className="darkModeBtn" onClick={toggleDarkMode} style={{float: "right"}}> {darkMode.value ?
-            <div className="theme-emoji-dark-div"> {"☀️"} </div>
-              : <div className="theme-emoji-light-div"> {"🌙" } </div>} 
+            <FontAwesomeIcon className="navbar-icon is-black" icon={faSun}/>
+              : <FontAwesomeIcon className="navbar-icon is-black" icon={faMoon}/> } 
          </button> 
          </div>
          <div className="col-xs-2 col-sm-2 col-md-1">
          <button className="toggleIcon" onClick={() => setNavbarOpen(!navbarOpen)}> 
           {navbarOpen ? 
-          <FontAwesomeIcon className="is-black" icon={faTimes}/>  : 
-          <FontAwesomeIcon className="is-black" icon={faBars}/> }
+          <FontAwesomeIcon className="navbar-icon is-black" icon={faTimes}/>  : 
+          <FontAwesomeIcon className="navbar-icon is-black" icon={faBars}/> }
         
         </button>
            </div>

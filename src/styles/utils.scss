@@ -3,12 +3,30 @@
     padding: 2px 20px;
 }
 
-.theme-emoji-light-div {
-    color: transparent;  
-  text-shadow: 0 0 0 #0f0f0f;
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.theme-emoji-dark-div {
-    color: transparent;  
-  text-shadow: 0 0 0 white;
+.tags {
+  @extend .is-pink-bg;
+  display: inline;
+  padding: 4px;
+  border-radius: 3px;
+  margin-right: 3px;
+  font-size: 0.8em;
+}
+
+.tags:hover {
+  opacity: 0.8;
+}
+
+.center-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-div {
+  text-align: right;
 }

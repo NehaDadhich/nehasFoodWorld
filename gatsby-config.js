@@ -3,7 +3,7 @@ const path = require(`path`);
 module.exports = {
   siteMetadata: {
     title: `Neha's Food World`,
-    description: `An easy to use simple food website`,
+    description: `Amazing and easy to understand recipe website.`,
     author: `@nehaDadhich`
   },
   plugins: [

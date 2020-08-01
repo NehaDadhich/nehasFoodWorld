@@ -4,7 +4,7 @@ title: "Bhel Puri"
 displayImage: ./images/bhel-puri.png
 date: 2020-06-01T00:00:00.000Z
 description: "Crunchy, spicy, tangy and a bit sweet snack made with puffed rice."
-tags: ["Puffed Rice", "Snack"]
+tags: ["Puffed Rice", "Snack", "Vegan"]
 type: "recipe"
 ---
 
@@ -20,13 +20,13 @@ One of the popular Indian street food is bhel puri. It's a quick and easy to mak
 - 2 medium tomatoes, finely chopped
 - 1/6 cup tamarind (reduce the quantity if it is concentrated)
 - 1/2 tbsp sugar
-- 1/2 tsp green chillies
+- 1/2 teaspoon green chillies
 - 4 tbsp mint leaves
-- 1/2 tsp red chilly powder
-- 1/4 tsp black salt
-- 1/4 tsp cumin seed powder (if not available, dry roast cumin seeds and blend in a fine powder)
+- 1/2 teaspoon red chilly powder
+- 1/4 teaspoon black salt
+- 1/4 teaspoon cumin seed powder (if not available, dry roast cumin seeds and blend in a fine powder)
 - salt to taste
-- 1/2 tsp lemon juice
+- 1/2 teaspoon lemon juice
 - 1/4 cup peanuts (optional)
 - <a href="https://en.wikipedia.org/wiki/Sev_(food)" target="_blank" rel="noopener noreferrer" class="link" > 1/4 cup sev </a>
 - 1/4 cup papadi, a crispy fried dough wafers (I couldn't find a link, optional)

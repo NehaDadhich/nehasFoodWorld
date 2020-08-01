@@ -3,7 +3,14 @@
   text-decoration: none !important;
 }
 .link:hover {
-  border-bottom: 1px solid #f08f00 !important;
+  border-bottom: 1px solid #BA83C4 !important;
+  text-decoration: none !important;
+  transform: scale(1.05);
+}
+
+.dark-mode 
+.link:hover {
+  border-bottom: 1px solid #E7D5F9 !important;
   text-decoration: none !important;
   transform: scale(1.05);
 }
@@ -14,12 +21,11 @@
 
 .nav-link {
   transition: all .2s ease-in-out;
-  font-weight: 100;
   text-decoration: none;
 }
 
 .nav-link:hover {
-  border-bottom: 1px solid #f08f00 !important;
+  border-bottom: 2px solid #BA83C4 !important;
   transform: scale(1.05);
 }
 
@@ -38,3 +44,29 @@
   text-decoration: none !important;
   @extend .is-black;
 }
+
+.button-link,
+.button-link:hover, 
+.button-link:focus,
+.button-link:visited,
+.button-link:active {
+  text-decoration: none !important;
+}
+
+.tag-link {
+  @extend .is-black;
+  text-decoration: none;
+}
+
+.social-icon {
+  @extend .is-black;
+}
+
+.social-icon:hover {
+  color: #254eaf !important;
+}
+
+.dark-mode .social-icon:hover  {
+  color: #2e96d3 !important;
+}
+

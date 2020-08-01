@@ -1,36 +1,68 @@
 .custom-button {
-    background-color: #f08f00;
-    color: white;
     max-width: 250px;
+    background-color: #BA83C4;
+    @extend .is-white;
     padding:15px;
     text-align: center;
     font-family: Lato;
-    border: 1px solid #ffa31a;
+    border: 1px solid #BA83C4;
     margin-bottom: 2px;
 }
+
 .custom-button:hover {
-    background-color: white;
+    background-color: inherit;
     border-style: solid;
     border-width: 2px;
     margin: -1px;
-    border-color: #ffa31a;
-    color: #f08f00;
+   border-color: #BA83C4;
+    @extend .is-black;
     cursor: pointer;
 }
-
-.custom-button:focus {
-    background-color: #f06348;
+.custom-button:focus
+ {
+    background-color: #e97e91;
     border-style: solid;
     border-width: 2px;
     margin: -1px;
-    border-color: #f05f42;
-    color: white;
+    border-color: #e97e91;
+    @extend .is-black;
     cursor: pointer;
     outline: 0;
 }
 
-  .darkModeBtn,
-.toggleIcon {
+.dark-mode
+.custom-button {
+ background-color: #E7D5F9;
+ border: 1px solid #E7D5F9;
+}
+
+.dark-mode
+.custom-button:hover {
+    background-color: inherit;
+    border-style: solid;
+    border-width: 2px;
+    margin: -1px;
+   border-color:#E7D5F9;
+    @extend .is-black;
+    cursor: pointer;;
+}
+
+.dark-mode
+.custom-button:focus
+ {
+    background-color: #eb8ea0;
+    border-style: solid;
+    border-width: 2px;
+    margin: -1px;
+    border-color: #eb8ea0;
+    @extend .is-black;
+    cursor: pointer;
+    outline: 0;
+}
+
+.darkModeBtn,
+.toggleIcon,
+.navbarBtn {
     height: 30px;
     border: none;
     background-color: inherit;
@@ -39,13 +71,21 @@
     font-size: 1em;
 }
 
-.darkModeBtn:hover, 
-.toggleIcon:hover {
+.darkModeBtn:hover .navbar-icon, 
+.toggleIcon:hover .navbar-icon {
    outline: 0;
-   border: 1px solid #f08f00;
+   color: #254eaf !important;
+}
+
+.dark-mode
+.darkModeBtn:hover .navbar-icon, 
+.toggleIcon:hover .navbar-icon {
+   outline: 0;
+   color: #2e96d3 !important;
 }
 
 .darkModeBtn:focus, 
 .toggleIcon:focus {
     outline: 0;
 }
+

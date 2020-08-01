@@ -4,7 +4,7 @@ title: "Malai Moong Tadka"
 displayImage: ./images/malai-moong-tadka.png
 date: 2020-06-04T00:00:00.000Z
 description: "A high protein, creamy dal perfect with rice or preferred bread."
-tags: ["Malai", "Moong", "Cream", "Tadka"]
+tags: ["Moong", "Cream", "Tadka","Legume", "Dairy"]
 type: "recipe"
 ---
 
@@ -26,28 +26,28 @@ Whole moong dal or mung bean or green gram is a very healthy, high protein gram 
 - 2 cloves
 - 2 green cardamoms
 - 1 medium bay leaf
-- 1/2 tsp red chilly powder
-- 1/2 tsp cumin seeds
+- 1/2 teaspoon red chilly powder
+- 1/2 teaspoon cumin seeds
 - 2 tablespoon unsalted butter
-- 4 tsp cooking oil
+- 4 teaspoon cooking oil
 - Salt to taste
 
 *Garnishing*
-- 2 tsp butter
+- 2 teaspoon butter
 - 2 tbsp fresh cream
-- 1 tsp dry fenugreek
-- 1/2 tsp cumin seeds
+- 1 teaspoon dry fenugreek
+- 1/2 teaspoon cumin seeds
 - 1 large red chilly or 2 to 3 small ones (optional: if you enjoy crunchy red chillies)
 - 3 to 4 curry leaves
 - 5 to 6 coriander chopped
 
 ###Procedure
 *Moong dal*
-- In a pan, add 2 tsp cooking oil and 1 tablespoon butter, this will make sure that the butter does not evaporate. 
+- In a pan, add 2 teaspoon cooking oil and 1 tablespoon butter, this will make sure that the butter does not evaporate. 
 - Once, the butter has melted, add the bay leaf, cardamoms, cinnamon, cloves and stir for 2 to 3 minutes. 
 - Add the onions, garlic, ginger and green chillies. Cook till the onions turn translucent. 
 - Add the tomatoes and let them cook. Once done, empty the contents in a plate and let them cool down to the room temperature. Finally, blend them in a fine paste. (If you want to avoid strong flavours, you can remove the dry spices and just blend the onion, ginger, garlic, green chillies and tomatoes. It will still have the aroma but will be mild)
-- In a pan, add 2 tsp cooking oil and 1 tablespoon butter, once the butter has started melting, add the cumin seeds. 
+- In a pan, add 2 teaspoon cooking oil and 1 tablespoon butter, once the butter has started melting, add the cumin seeds. 
 - Once the cumin seeds start to crackle add the blended puree and the red chilly powder. 
 - Let the puree boil, then add the cooked moong dal. 
 - Let it cook for 5 to 7 minutes and then add the fresh cream.

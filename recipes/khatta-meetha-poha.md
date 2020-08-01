@@ -4,7 +4,7 @@ title: "Khatta Meetha Poha"
 displayImage: ./images/khatta-meetha-poha.png
 date: 2020-06-02T00:00:00.000Z
 description: "Flattened rice with an amazing sweet and sour contrasting combination."
-tags: ["Poha", "Flattened Rice"]
+tags: ["Poha", "Flattened Rice", "Vegan"]
 type: "recipe"
 ---
 
@@ -17,12 +17,12 @@ Khatta means sour in Hindi and Meetha means sweet, this dish is a unique combina
 - 2 cups poha (flattened rice)
 - 3 tablespoon oil
 - 8 to 10 curry leaves
-- 1 tsp split black lentils (urad dal)
+- 1 teaspoon split black lentils (urad dal)
 - 3 tablespoons roasted gram dal
 - 5 to 6 green chillies, keep two aside and chop the remaining in about 1/2 inch size
-- 1/2 tsp cumin seeds
-- 1/2 tsp mustard seeds
-- 1/2 tsp turmeric powder
+- 1/2 teaspoon cumin seeds
+- 1/2 teaspoon mustard seeds
+- 1/2 teaspoon turmeric powder
 - 1 large lemon
 - 1 tablespoon sugar
 - salt to taste
