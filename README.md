@@ -4,4 +4,4 @@ https://nehasfoodworld.web.app/
 
 A recipe website developed using React and Gatsby.
 This website is open source and you can fork it. 
-Please redirect to Neha's Food World if you use fork this repository. 😃
+Please redirect to Neha's Food World if you fork this repository. 😃
