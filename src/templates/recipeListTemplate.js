@@ -17,7 +17,6 @@ class Recipes extends Component {
         <div className="row margin-0-l pad-5-t pad-5-r">
           {
           posts.map(({node}) => {
-            console.log({node})
             return (
             <div className="col-xs-12 col-md-4">
             <div>
@@ -29,7 +28,7 @@ class Recipes extends Component {
           }
         </div> 
         <div className="center-div">
-      {Array.from({ length: numberOfPages -1}, (_, i) => (
+      {Array.from({ length: numberOfPages}, (_, i) => (
           <Link className="button-link margin-3-l"
             to={`/recipes/${i === 0 ? '' : i + 1}`}
           >

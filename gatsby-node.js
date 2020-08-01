@@ -5,12 +5,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
   const pageTemplate = path.resolve(`./src/templates/pageTemplate.js`);
   const recipeListTemplate = path.resolve(`./src/templates/recipeListTemplate.js`);
+  const techListTemplate = path.resolve(`./src/templates/techListTemplate.js`);
   const recipeTagTemplate = path.resolve(`./src/templates/recipeTagsTemplate.js`)
 
 
-  const result = await graphql(`
+  const recipeResult = await graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(filter: { frontmatter: {type: {eq: "recipe"}} }) {
         edges {
           node {
             frontmatter {
@@ -29,15 +30,29 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         }
   `);
 
+  const techResult = await graphql(`{
+    allMarkdownRemark(filter: { frontmatter: {type: {eq: "tech"}} }) {
+      edges {
+        node {
+          frontmatter {
+            path
+            title
+            tags
+          }
+          }
+        }
+        }
+      }`)
+
   // Handle errors
-  if (result.errors) {
+  if (recipeResult.errors || techResult.errors) {
     reporter.panicOnBuild(`Error while running GraphQL query.`);
     return;
   }
 
-  const items = result.data.allMarkdownRemark.edges;
+  const recipeItem = recipeResult.data.allMarkdownRemark.edges;
   const itemsPerPage = 6;
-  const numberOfPages = Math.ceil(items.length/ itemsPerPage);
+  const numberOfPages = Math.ceil(recipeItem.length/ itemsPerPage);
 
   Array.from({length: numberOfPages}).forEach((_,i) => {
     createPage({
@@ -53,15 +68,29 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     });
   });
 
-  items.forEach(({ node }) => {
+  recipeItem.forEach(({ node }) => {
     createPage({
       path: node.frontmatter.path,
       component: pageTemplate
     });
   });
 
+  const techItem = techResult.data.allMarkdownRemark.edges;
+
+  techItem.forEach(({node}) => {
+    createPage({
+      path: node.frontmatter.path,
+      component: pageTemplate
+    });
+  });
+
+  actions.createPage({
+    path: "/making-of",
+    component:  techListTemplate
+  })
+
   // Extract tag data from query
-  const tags = result.data.recipeTagsGroup.group
+  const tags = recipeResult.data.recipeTagsGroup.group
   // Make tag pages
   tags.forEach(tag => {
     createPage({

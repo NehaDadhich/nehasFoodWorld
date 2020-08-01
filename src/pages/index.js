@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import RecipePreview from "../components/recipePreview";
-import MakingOfList from "../components/techList";
+//import MakingOfList from "../templates/techListTemplate";
 import Search from "../components/search";
 import { Link } from "gatsby";
 import { StaticQuery, graphql } from "gatsby";
@@ -23,9 +23,9 @@ export default function Start() {
             </div>
             </div>
         <div className="pad-1-t pad-5-b">
-        <MakingOfList limit={2} />
+        {/* <MakingOfList limit={2} /> */}
         <div className="pad-10-r right-div">
-        <Link className="button-link" to="/makingOf"> <button className="custom-button"> Wow, show me tech. </button> </Link>
+        <Link className="button-link" to="/making-of"> <button className="custom-button"> Wow, show me tech. </button> </Link>
             </div>
          </div>
         </div>
