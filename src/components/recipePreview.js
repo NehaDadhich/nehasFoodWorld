@@ -4,7 +4,7 @@ import Img from "gatsby-image";
 import { kebabCase } from "lodash"
 
 export default function RecipePreview ({title, path, tags, description, displayImage, date }) {
-  return  <div className="margin-10-b margin-5-r">
+  return  <div className="margin-6-b margin-5-r">
   <Link to={path} className="link" id="path">
     <div className="grow image-card is-light-grey-bg">
     <Img

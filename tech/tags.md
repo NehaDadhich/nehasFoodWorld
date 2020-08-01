@@ -7,79 +7,81 @@ type: "tech"
 ---
 *Note:* The code can be viewed at <a href="https://github.com/NehaDadhich/nehasFoodWorld" target="_blank" rel="noopener noreferrer" class="link">  Neha's Food World Github</a>.
 
-One of the ideas was that the home page will display the recipes as image cards with description and date. This article explains how this was achieved.
+By adding tags to recipes, it is easier now to find related recipes. I followed the Gatsby tags documentation to achieve this. In this article, I will discuss the tags code of this website.
 
-Firstly, the following dependencies were installed through npm:
-- gatsby-remark-images
-- gatsby-remark-copy-linked-files
-- gatsby-transformer-sharp
-- gatsby-plugin-sharp
+To fetch tags from GraphQL, the tags were added to each as below as: 
+```markdown{numberLines: true}
+tags: [ "Spaghetti", "Vegan", "Spicy", "Lunch", "Dinner"]
+```
 
-The recipeList.js file is responsible for displaying the list of latest recipes on the home page. The GraphQL query was edited to fetch the image, description, title and date as:
-
-```Javascript{numberLines: true}
-  query={graphql`
-        query Projects {
-          allMarkdownRemark
-  (
-    filter: { frontmatter: {type: {eq: "recipe"}} }
-    sort: { fields: [frontmatter___date], order: DESC }
-  ) {
-            edges {
-              node {
-                id
-                frontmatter {
-                  path
-                  title
-                  description
-                  displayImage {
-                    childImageSharp {
-                      fluid(maxWidth: 500) {
-                        ...GatsbyImageSharpFluid_noBase64
-                      }
-                    }
-                  }
-                  date(formatString: "MMMM DD, YYYY")
-                }
-              }
+The following query was added to the gatsby-node.js to fetch the tags
+```GraphQL{numberLines: true}
+recipeTagsGroup: allMarkdownRemark(filter: { frontmatter: {type: {eq: "recipe"}} }) {
+            group(field: frontmatter___tags) {
+              fieldValue
             }
           }
+```
+Then page creation for each tag was defined as below: 
+```JavaScript{numberLines: true}
+  const tags = recipeResult.data.recipeTagsGroup.group
+  tags.forEach(tag => {
+    createPage({
+      path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
+      component: recipeTagsTemplate,
+      context: {
+        tag: tag.fieldValue,
+      },
+    })
+  })
+};
+```
+
+The recipeTagsTemplate.js defines the tag page. For this the data is fetched using the following query to filter out the recipes of the requested tag: 
+
+```GraphQL{numberLines: true}
+query RecipeTags($tag: String) {
+    recipeTagsGroup: allMarkdownRemark(filter: { frontmatter: {type: {eq: "recipe"}} }) {
+      group(field: frontmatter___tags) {
+       tag: fieldValue
+      }
+    }
+  allMarkdownRemark(
+      filter: { frontmatter: {tags: { in: [$tag] }, type: {eq: "recipe"}} }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            path
+            title
+            tags
+            description
+            displayImage {
+                childImageSharp {
+                  fluid(maxWidth: 500) {
+                    ...GatsbyImageSharpFluid_noBase64
+                  }
+                }
+              }
+            date(formatString: "MMMM DD, YYYY")
+          }
         }
-      `} 
-```
-This was exported to edges as:
-
-```Javascript{numberLines: true}
-data => {
-        let { edges } = data.allMarkdownRemark;
+      }
+    }
+  }
 ```
 
-And then passed to a Label component as: 
-
-```Javascript{numberLines: true}
-  <Label {...item.node.frontmatter} className="is-black"/>
+Then the result i.e., edges are stored in taggedPosts and for each taggedPost a RecipePreview is created as below: 
+```JavaScript{numberLines: true}
+   taggedPosts.map(({node}) => {
+            console.log({node})
+            return (
+            <div className="col-xs-12 col-md-4">
+            <div>
+            <RecipePreview {...node.frontmatter} className="is-black"/>
+            </div>
+            </div>
 ```
 
-The Label component creates the image card as: 
 
-```Javascript{numberLines: true}
-export const Label = ({ title, path, description, displayImage, date}) => (
-  
-    <div className="margin-10-b margin-5-r">
-  <Link to={path} className="link margin-15-b" id="path">
-    <div className="grow image-card is-light-grey-bg">
-    <Img
-          fluid={displayImage.childImageSharp.fluid}
-          className="cover-image"
-          
-        />
-      <div className="image-card-container is-black">
-        <h2> <strong>{title} </strong></h2> 
-        <p className="margin-1-b">{description}</p>
-        <p className="small-text">{date}</p>
-      </div>
-    </div>
-  </Link>
-  </div>
-);
-```

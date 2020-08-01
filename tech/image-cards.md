@@ -7,7 +7,7 @@ type: "tech"
 ---
 *Note:* The code can be viewed at <a href="https://github.com/NehaDadhich/nehasFoodWorld" target="_blank" rel="noopener noreferrer" class="link">  Neha's Food World Github</a>.
 
-One of the ideas was that the home page will display the recipes as image cards with description and date. This article explains how this was achieved.
+One of the ideas was that the recipes will be displayed as image cards with images and information. This article explains how this was achieved.
 
 Firstly, the following dependencies were installed through npm:
 - gatsby-remark-images
@@ -15,58 +15,12 @@ Firstly, the following dependencies were installed through npm:
 - gatsby-transformer-sharp
 - gatsby-plugin-sharp
 
-The recipeList.js file is responsible for displaying the list of latest recipes on the home page. The GraphQL query was edited to fetch the image, description, title and date as:
+The recipePreview.js file was created to display each recipe as an image card as below:
 
 ```Javascript{numberLines: true}
-  query={graphql`
-        query Projects {
-          allMarkdownRemark
-  (
-    filter: { frontmatter: {type: {eq: "recipe"}} }
-    sort: { fields: [frontmatter___date], order: DESC }
-  ) {
-            edges {
-              node {
-                id
-                frontmatter {
-                  path
-                  title
-                  description
-                  displayImage {
-                    childImageSharp {
-                      fluid(maxWidth: 500) {
-                        ...GatsbyImageSharpFluid_noBase64
-                      }
-                    }
-                  }
-                  date(formatString: "MMMM DD, YYYY")
-                }
-              }
-            }
-          }
-        }
-      `} 
-```
-This was exported to edges as:
-
-```Javascript{numberLines: true}
-data => {
-        let { edges } = data.allMarkdownRemark;
-```
-
-And then passed to a Label component as: 
-
-```Javascript{numberLines: true}
-  <Label {...item.node.frontmatter} className="is-black"/>
-```
-
-The Label component creates the image card as: 
-
-```Javascript{numberLines: true}
-export const Label = ({ title, path, description, displayImage, date}) => (
-  
-    <div className="margin-10-b margin-5-r">
-  <Link to={path} className="link margin-15-b" id="path">
+export default function RecipePreview ({title, path, tags, description, displayImage, date }) {
+  return  <div className="margin-6-b margin-5-r">
+  <Link to={path} className="link" id="path">
     <div className="grow image-card is-light-grey-bg">
     <Img
           fluid={displayImage.childImageSharp.fluid}
@@ -75,11 +29,60 @@ export const Label = ({ title, path, description, displayImage, date}) => (
         />
       <div className="image-card-container is-black">
         <h2> <strong>{title} </strong></h2> 
-        <p className="margin-1-b">{description}</p>
+        <div className="tags-container"> {styleTags(tags)} </div>
+        <p className="margin-1-b margin-0-t">{description}</p>
         <p className="small-text">{date}</p>
       </div>
     </div>
   </Link>
   </div>
-);
-```
+}
+
+export const styleTags = (tags) => 
+tags.map((tag) => (
+  <Link to={`/tags/${kebabCase(tag)}`} className="tag-link margin-3-b"> <p className="tags margin-1-tb margin-1-r">{tag} </p></Link>
+))
+ ```
+
+ The advantage of having a separate component as RecipePreview is that it can be reused anywhere, only the required data needs to be provided. 
+
+ The styles were defined in images.scss as:
+ 
+ ```scss{numberLines: true}
+   .image-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 550px;
+    border-radius: 5px;
+  }
+ ```
+
+ For desktops, the height was reduced: 
+
+ ```scss{numberLines: true}
+  @media only screen and (min-width: 768px){
+      .image-card {
+        height: 480px;
+      }
+ ```
+
+ The hover effect was added:
+
+ ```scss{numberLines: true}
+ .image-card:hover {
+    -ms-transform: scale(1.08); /* IE 9 */
+    -webkit-transform: scale(1.08); /* Safari 3-8 */
+    transform: scale(1.08);
+  }
+ ```
+
+ For dark-mode, the box-shadow was changed to a white colour: 
+```scss{numberLines: true}
+  .dark-mode .image-card{
+    box-shadow: 0 2px 4px 0 #F0F0F1;
+  }
+  ```
+
+  Similarly, tech-card were created for the displaying technology articles as cards.
+

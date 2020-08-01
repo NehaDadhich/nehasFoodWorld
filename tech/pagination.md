@@ -7,79 +7,91 @@ type: "tech"
 ---
 *Note:* The code can be viewed at <a href="https://github.com/NehaDadhich/nehasFoodWorld" target="_blank" rel="noopener noreferrer" class="link">  Neha's Food World Github</a>.
 
-While increasing the number of 
+As the number of recipes will be always increasing on this website, pagination was important for better organisation. I followed the Gatsby documentation on pagination to achieve this. In this article, I will discuss the pagination code of this website.
 
-Firstly, the following dependencies were installed through npm:
-- gatsby-remark-images
-- gatsby-remark-copy-linked-files
-- gatsby-transformer-sharp
-- gatsby-plugin-sharp
+Firstly, I added the following code to gatsby-node.js
 
-The recipeList.js file is responsible for displaying the list of latest recipes on the home page. The GraphQL query was edited to fetch the image, description, title and date as:
+  ```Javascript{numberLines: true}
+  const recipeItem = recipeResult.data.allMarkdownRemark.edges;
+  const itemsPerPage = 6;
+  const numberOfPages = Math.ceil(recipeItem.length/ itemsPerPage);
+
+  Array.from({length: numberOfPages}).forEach((_,i) => {
+    createPage({
+      path: i === 0 ? `/recipes` : `/recipes/${i + 1}`,
+      component: recipeListTemplate,
+      context: {
+        limit: itemsPerPage,
+        skip: i * itemsPerPage,
+        numberOfPages,
+        currentPage: i + 1,
+        slug: i === 0 ? `/recipes` : `/recipes/${i + 1}`,
+      },
+    });
+  });
+  ```
+  The above code snippet gets the recipes data queried into recipeItem. Each recipes page will display 6 recipes. The number of pages that should be created will be the largest integer of the total number of recipes by 6. The loop will create recipes page which will be used in the recipeListTemplate to display 6 recipes. 
+
+  In the recipeListTemplate, the recipes are queried from the GraphQL as below: 
 
 ```Javascript{numberLines: true}
   query={graphql`
-        query Projects {
-          allMarkdownRemark
-  (
+       query Recipes($skip: Int!, $limit: Int!, $slug: String!) {
+  sitePage(path: { eq: $slug }) {
+    context {
+      limit
+      skip
+      numberOfPages
+    }
+  }
+allMarkdownRemark(
     filter: { frontmatter: {type: {eq: "recipe"}} }
     sort: { fields: [frontmatter___date], order: DESC }
+    limit: $limit
+    skip: $skip
   ) {
-            edges {
-              node {
-                id
-                frontmatter {
-                  path
-                  title
-                  description
-                  displayImage {
-                    childImageSharp {
-                      fluid(maxWidth: 500) {
-                        ...GatsbyImageSharpFluid_noBase64
-                      }
-                    }
-                  }
-                  date(formatString: "MMMM DD, YYYY")
-                }
+    edges {
+      node {
+        frontmatter {
+          path
+          title
+          tags
+          description
+          displayImage {
+            childImageSharp {
+              fluid(maxWidth: 500) {
+                ...GatsbyImageSharpFluid_noBase64
               }
             }
           }
+          date(formatString: "MMMM DD, YYYY")
         }
-      `} 
-```
-This was exported to edges as:
-
-```Javascript{numberLines: true}
-data => {
-        let { edges } = data.allMarkdownRemark;
+      }
+    }
+  }
+}`} 
 ```
 
-And then passed to a Label component as: 
-
-```Javascript{numberLines: true}
-  <Label {...item.node.frontmatter} className="is-black"/>
+The Recipes class will display six recipes per page as below:
+```JavaScript{numberLines: true}
+class Recipes extends Component {
+  render() {
+    const  { data }  = this.props
+    const allMarkdownRemark = data.allMarkdownRemark
+    const recipes = allMarkdownRemark.edges
+    const { numberOfPages } = this.props.pageContext
 ```
+The data returned is stored in the recipes variables. The number of pages are fetched from the pageContext and used to create pagination as below: 
 
-The Label component creates the image card as: 
-
-```Javascript{numberLines: true}
-export const Label = ({ title, path, description, displayImage, date}) => (
-  
-    <div className="margin-10-b margin-5-r">
-  <Link to={path} className="link margin-15-b" id="path">
-    <div className="grow image-card is-light-grey-bg">
-    <Img
-          fluid={displayImage.childImageSharp.fluid}
-          className="cover-image"
-          
-        />
-      <div className="image-card-container is-black">
-        <h2> <strong>{title} </strong></h2> 
-        <p className="margin-1-b">{description}</p>
-        <p className="small-text">{date}</p>
-      </div>
-    </div>
-  </Link>
-  </div>
-);
+```JavaScript{numberLines: true}
+ {Array.from({ length: numberOfPages}, (_, i) => (
+          <Link className="button-link margin-3-l"
+            to={`/recipes/${i === 0 ? '' : i + 1}`}
+          >
+            <button className="custom-button">
+            {i + 1}
+          </button>
+          </Link>
+      ))}
 ```
+The first page is created at /recipes and the following will be created as /recipes/2 and so on.

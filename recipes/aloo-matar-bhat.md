@@ -4,7 +4,7 @@ title: "Aloo Matar Bhat"
 displayImage: ./images/aloo-matar-bhat.png
 date: 2020-06-03T00:00:00.000Z
 description: "Aromatic rice spiced with potato and peas, a perfect dish for lunch or dinner."
-tags: ["Rice", "Peas", "Potato", "Lunch", "Dinner"]
+tags: ["Rice", "Peas", "Potato", "Dairy"]
 type: "recipe"
 ---
 

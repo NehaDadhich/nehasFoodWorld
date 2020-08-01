@@ -4,7 +4,7 @@ title: "Malai Moong Tadka"
 displayImage: ./images/malai-moong-tadka.png
 date: 2020-06-04T00:00:00.000Z
 description: "A high protein, creamy dal perfect with rice or preferred bread."
-tags: ["Moong", "Cream", "Tadka"]
+tags: ["Moong", "Cream", "Tadka","Legume", "Dairy"]
 type: "recipe"
 ---
 

@@ -4,7 +4,7 @@ title: "Chilly Garlic Spaghetti"
 displayImage: ./images/chilly-garlic-spaghetti.png
 date: 2020-06-04T00:00:00.000Z
 description: "Spicy spaghetti with garlic aroma."
-tags: [ "Spaghetti", "Vegan", "Spicy", "Lunch", "Dinner"]
+tags: [ "Spaghetti", "Vegan", "Spicy"]
 type: "recipe"
 ---
 

@@ -6,7 +6,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const pageTemplate = path.resolve(`./src/templates/pageTemplate.js`);
   const recipeListTemplate = path.resolve(`./src/templates/recipeListTemplate.js`);
   const techListTemplate = path.resolve(`./src/templates/techListTemplate.js`);
-  const recipeTagTemplate = path.resolve(`./src/templates/recipeTagsTemplate.js`)
+  const recipeTagsTemplate = path.resolve(`./src/templates/recipeTagsTemplate.js`)
 
 
   const recipeResult = await graphql(`
@@ -89,13 +89,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     component:  techListTemplate
   })
 
-  // Extract tag data from query
   const tags = recipeResult.data.recipeTagsGroup.group
-  // Make tag pages
   tags.forEach(tag => {
     createPage({
       path: `/tags/${_.kebabCase(tag.fieldValue)}/`,
-      component: recipeTagTemplate,
+      component: recipeTagsTemplate,
       context: {
         tag: tag.fieldValue,
       },

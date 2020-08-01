@@ -1,24 +1,29 @@
 import React, { Component } from "react";
 import { graphql, Link } from "gatsby";
 import RecipePreview from "../components/recipePreview";
+import SEO from "../components/seo";
 import Layout from "../components/layout";
 
 class Recipes extends Component {
   render() {
     const  { data }  = this.props
     const allMarkdownRemark = data.allMarkdownRemark
-    const posts = allMarkdownRemark.edges
+    const recipes = allMarkdownRemark.edges
     const { numberOfPages } = this.props.pageContext
     return (
       <Layout>
+         <SEO
+        title={"Recipes"}
+        description={"All recipes"}
+      />
       <div className="pad-2-b pad-8-l margin-0-b">
           <h2 className="margin-0-t is-black" >Latest recipes</h2>
 
         <div className="row margin-0-l pad-5-t pad-5-r">
           {
-          posts.map(({node}) => {
+          recipes.map(({node}) => {
             return (
-            <div className="col-xs-12 col-md-4">
+            <div className="col-xs-12 col-md-4 margin-4-b">
             <div>
             <RecipePreview {...node.frontmatter} className="is-black"/>
             </div>
@@ -34,7 +39,6 @@ class Recipes extends Component {
           >
             <button className="custom-button">
             {i + 1}
-
           </button>
           </Link>
       ))}
@@ -54,7 +58,6 @@ query Recipes($skip: Int!, $limit: Int!, $slug: String!) {
       limit
       skip
       numberOfPages
-      currentPage
     }
   }
 allMarkdownRemark(

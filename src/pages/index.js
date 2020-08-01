@@ -1,14 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import RecipePreview from "../components/recipePreview";
-//import MakingOfList from "../templates/techListTemplate";
+import TechPreview from "../components/techPreview";
 import Search from "../components/search";
 import { Link } from "gatsby";
-import { StaticQuery, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
-export default function Start() {
-    return (
+class Start extends Component {
+  render() {
+    const {data} = this.props;
+    const recipes = data.allMarkdownRemark.edges;
+    const techArticles = data.TopTechArticles.edges;
+  return (
     <>
     <Layout className="is-white-bg">
         <div>
@@ -17,13 +21,13 @@ export default function Start() {
             <Search />
         </div>
         <div className="pad-5-b">
-            {recipeQuery()}
-            <div className="pad-15-r right-div">
+            {recipeSection(recipes)}
+            <div className="pad-15-r pad-1-t right-div">
             <Link className="button-link" to="/recipes"> <button className="custom-button"> Yum, I want more. </button> </Link>
             </div>
             </div>
         <div className="pad-1-t pad-5-b">
-        {/* <MakingOfList limit={2} /> */}
+             {techSection(techArticles)}
         <div className="pad-10-r right-div">
         <Link className="button-link" to="/making-of"> <button className="custom-button"> Wow, show me tech. </button> </Link>
             </div>
@@ -31,12 +35,47 @@ export default function Start() {
         </div>
     </Layout>
     </>);
+  }
+}
+
+export default Start
+
+ export const recipeSection = (recipes) => {
+  return  <>
+  <div className="pad-5-l pad-5-r">
+  <div className="pad-5-l pad-5-r pad-2-b">
+      <h1 className="is-black">Latest Recipes </h1>
+      </div>
+  <div className="row pad-5-l pad-5-r"> 
+  {recipes.map(({node}) => (
+     <div className="col-xs-12 col-md-4">
+    <div>
+    <RecipePreview {...node.frontmatter} className="is-black"/>
+    </div>
+  </div> ))}
+    </div>
+    </div>
+    </>;
  }
 
- export const recipeQuery = () => {
-     return   <StaticQuery
-     query={graphql`
-query TopTwoRecipes {
+ export const techSection = (techArticles) => {
+   return <>
+    <div className="pad-2-b pad-8-l">
+       <h1 className="margin-0-t is-black margin-2-l" >Making of</h1>
+    <div className="row margin-0-l pad-5-t pad-5-r">
+          { techArticles.map(({node}) => (
+                <div className="col-xs-12 col-md-6">
+                <div>
+                <TechPreview {...node.frontmatter} className="is-black"/>
+                </div>
+                </div>
+          ))}
+      </div>    
+      </div>   
+   </>;
+ }
+
+ export const query = graphql`{
   allMarkdownRemark
 (
 filter: { frontmatter: {type: {eq: "recipe"}} }
@@ -63,26 +102,23 @@ limit: 3
       }
     }
   }
-}`}
-render={data => {
-  let { edges } = data.allMarkdownRemark; 
-  return  <>
-  <div className="pad-5-l pad-5-r">
-  <div className="pad-5-l pad-5-r pad-2-b">
-      <h1 className="is-black">Latest Recipes </h1>
-      </div>
-  <div className="row pad-5-l pad-5-r"> 
-  {edges.map(item => (
-     
-    <div className="col-xs-12 col-md-4">
-    <div>
-    <RecipePreview {...item.node.frontmatter} className="is-black"/>
-    </div>
-  </div> ))}
-    </div>
-    </div>
-    </>;
- }
-}
- />
- }
+  TopTechArticles: allMarkdownRemark
+(
+filter: { frontmatter: {type: {eq: "tech"}} }
+sort: { fields: [frontmatter___date], order: DESC }
+limit: 2
+) {
+    edges {
+      node {
+        id
+        frontmatter {
+          path
+          title
+          date(formatString: "MMMM DD, YYYY")
+        }
+      }
+    }
+  }
+}`;
+
+

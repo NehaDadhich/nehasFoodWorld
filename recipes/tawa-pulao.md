@@ -4,7 +4,7 @@ title: "Tawa Pulao"
 displayImage: ./images/tawa-pulao.png
 date: 2020-06-01T00:00:00.000Z
 description: "Spiced vegetable rice cooked in a pan. A healthy meal for lunch or dinner."
-tags: ["Rice", "Vegetables", "Lunch", "Dinner"]
+tags: ["Rice", "Vegetables","Dairy"]
 type: "recipe"
 ---
 

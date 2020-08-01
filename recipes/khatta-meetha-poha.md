@@ -4,7 +4,7 @@ title: "Khatta Meetha Poha"
 displayImage: ./images/khatta-meetha-poha.png
 date: 2020-06-02T00:00:00.000Z
 description: "Flattened rice with an amazing sweet and sour contrasting combination."
-tags: ["Poha", "Flattened Rice"]
+tags: ["Poha", "Flattened Rice", "Vegan"]
 type: "recipe"
 ---
 
