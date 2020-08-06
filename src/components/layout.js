@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
     <div className="is-light-grey-bg is-black">
       <Header />
       </div>
-      <main className="fixed-height pad-10-t is-white-bg">{children}</main>
+      <main className="fixed-height pad-5-t is-white-bg">{children}</main>
       <div className="is-light-grey-bg is-black">
       <Footer />
       </div>

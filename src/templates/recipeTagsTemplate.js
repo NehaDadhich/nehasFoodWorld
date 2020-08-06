@@ -14,8 +14,8 @@ const Tags = ( { pageContext, data} ) => {
         title={`"${tag}"`}
         description={`Recipes Tagged with "${tag}"`}
       />
-        <div className="pad-2-b pad-8-l margin-0-b">
-          <h2 className="margin-0-t is-black" >Recipes tagged as <span className="is-blue">{tag}</span></h2>
+        <div className="pad-2-b pad-8-l margin-0-b pad-5-t">
+          <h2 className="margin-0-t is-black pad-2-l" >Recipes tagged as <span className="is-blue">{tag}</span></h2>
 
         <div className="row margin-0-l pad-5-t pad-5-r">
           {

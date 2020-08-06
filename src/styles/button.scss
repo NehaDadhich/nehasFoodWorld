@@ -77,12 +77,18 @@
    color: #254eaf !important;
 }
 
+
 .dark-mode
-.darkModeBtn:hover .navbar-icon, 
-.toggleIcon:hover .navbar-icon {
+.darkModeBtn:hover .navbar-icon {
    outline: 0;
    color: #2e96d3 !important;
 }
+
+.dark-mode
+.toggleIcon:hover .navbar-icon {
+    outline: 0;
+    color: #2e96d3 !important;
+ }
 
 .darkModeBtn:focus, 
 .toggleIcon:focus {
