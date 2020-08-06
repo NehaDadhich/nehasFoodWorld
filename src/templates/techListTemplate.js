@@ -16,8 +16,8 @@ class MakingOf extends Component {
         title={"Making of"}
         description={"The tech behind the website"}
       />
-            <div className="pad-2-b pad-8-l">
-              <h2 className="margin-0-t is-black" >Making of</h2>
+            <div className="pad-2-b pad-8-l pad-5-t">
+              <h2 className="margin-0-t is-black pad-2-l" >Making of</h2>
 
             <div className="row margin-0-l pad-5-t pad-5-r">
               {

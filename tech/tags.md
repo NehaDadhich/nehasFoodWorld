@@ -11,7 +11,7 @@ By adding tags to recipes, it is easier now to find related recipes. I followed 
 
 To fetch tags from GraphQL, the tags were added to each as below as: 
 ```markdown{numberLines: true}
-tags: [ "Spaghetti", "Vegan", "Spicy", "Lunch", "Dinner"]
+tags: [ "Spaghetti", "Vegan", "Spicy"]
 ```
 
 The following query was added to the gatsby-node.js to fetch the tags

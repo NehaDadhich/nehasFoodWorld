@@ -24,7 +24,7 @@ export default function About() {
                     <p> Currently, I am learning website development using React and Gatsby. Apart from coding, I enjoy cooking therefore, I thought it would be a good idea to combine them and build something. </p>
                     <p>
                     Through this website, I am trying to share my version of few recipes as well as improve my coding skills. You can also see how this website is being developed under the 
-                  <Link class="link" to="/makingOf" > Making of </Link> section.
+                  <Link class="link" to="/making-of" > Making of </Link> section.
                 </p>
                 <p> This website was developed using <a className="link" target="_blank" rel="noopener noreferrer" href="https://github.com/slarsendisney/gatsby-mango">Samuel Larsen-Disney's mango gatsby boilerplate </a>. Thank you Sam for being an excellent teacher.</p>
                 <p> I hope you find this website helpful and enjoy some tasty food. </p>
