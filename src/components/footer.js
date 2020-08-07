@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons' 
 import { faGithub } from '@fortawesome/free-brands-svg-icons' 
 import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import { Link } from "gatsby";
  
 export default function Footer() {
     return (
@@ -16,7 +17,10 @@ export default function Footer() {
              <FontAwesomeIcon icon={faEnvelope} className="social-icon" /> </a>
         </p>
         <p className="margin-0-b margin-1-t">
-        All views expressed on this site are my own and do not represent the opinions of anyone I have been, am now or will be assoicated with.
+        Developed using <a className="link" target="_blank" rel="noopener noreferrer" href="https://github.com/slarsendisney/gatsby-mango">Samuel Larsen-Disney's Mango Gatsby boilerplate </a>. Thank you, Sam, for being an excellent teacher.  
+        </p>
+        <p className="margin-0-b margin-1-t">
+        <Link to="/disclaimer" className="link"> Disclaimer</Link>
         </p>
         </div>
         </>

@@ -32,7 +32,7 @@ class Recipes extends Component {
             
           }
         </div> 
-        <div className="center-div">
+        <div className="center-div pad-3-b">
       {Array.from({ length: numberOfPages}, (_, i) => (
           <Link className="button-link margin-3-l"
             to={`/recipes/${i === 0 ? '' : i + 1}`}
