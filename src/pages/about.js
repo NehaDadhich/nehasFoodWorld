@@ -26,7 +26,6 @@ export default function About() {
                     Through this website, I am trying to share my version of few recipes as well as improve my coding skills. You can also see how this website is being developed under the 
                   <Link class="link" to="/making-of" > Making of </Link> section.
                 </p>
-                <p> This website was developed using <a className="link" target="_blank" rel="noopener noreferrer" href="https://github.com/slarsendisney/gatsby-mango">Samuel Larsen-Disney's mango gatsby boilerplate </a>. Thank you Sam for being an excellent teacher.</p>
                 <p> I hope you find this website helpful and enjoy some tasty food. </p>
 
                 <h4> Happy Cooking 😃</h4>

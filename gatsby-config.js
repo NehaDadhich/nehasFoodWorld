@@ -7,6 +7,15 @@ module.exports = {
     author: `@nehaDadhich`
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: "",
+        // Defines where to place the tracking script - `true` in the head and `false` in the body
+        head: false
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-use-dark-mode`,
