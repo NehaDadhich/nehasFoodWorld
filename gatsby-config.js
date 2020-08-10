@@ -8,11 +8,18 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: '',
+          cookieName: 'gatsby-gdpr-google-analytics', 
+          anonymize: true 
+        },
+        environments: ['production', 'development']
+      },
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        // The property ID; the tracking code won't be generated without it
         trackingId: "",
-        // Defines where to place the tracking script - `true` in the head and `false` in the body
         head: false
       },
     },
