@@ -70,3 +70,14 @@
   color: #2e96d3 !important;
 }
 
+.cookie-consent-link {
+  color: #2e96d3;
+  text-decoration: none;
+}
+
+.cookie-consent-link:hover {
+  text-decoration: none;
+  color: #2e96d3;
+  border-bottom: 1px solid white;
+}
+
