@@ -11,15 +11,16 @@ module.exports = {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: '',
+          trackingId: 'UA-168017870-1"',
           cookieName: 'gatsby-gdpr-google-analytics', 
-          anonymize: true 
+          anonymize: true,
+          autoStartWithCookiesEnabled: false,
         },
         environments: ['production', 'development']
       },
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "",
+        trackingId: "UA-168017870-1",
         head: false
       },
     },
