@@ -20,7 +20,6 @@ const Tags = ( { pageContext, data} ) => {
         <div className="row margin-0-l pad-5-t pad-5-r">
           {
           taggedPosts.map(({node}) => {
-            console.log({node})
             return (
             <div className="col-xs-12 col-md-4">
             <div>

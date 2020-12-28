@@ -11,7 +11,7 @@ const Layout = ({ children }) => {
     <div className="is-light-grey-bg is-black">
     <CookieConsent
         location="bottom"
-        buttonText="Accept"
+        buttonText="OK"
         cookieName="gatsby-gdpr-google-analytics"
         style={{ background: "#BA83C4", padding: 5 }}
         buttonStyle={{
@@ -24,8 +24,8 @@ const Layout = ({ children }) => {
           marginRight: 60,
         }}
         onAccept={() => {
-          Cookies.set('_ga'),
-          Cookies.set('_gat'),
+          Cookies.set('_ga')
+          Cookies.set('_gat')
           Cookies.set('_gid')
         }}
       >
