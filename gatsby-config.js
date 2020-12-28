@@ -1,9 +1,29 @@
-const path = require(`path`);
+require("dotenv").config({
+  path: `.env`,
+});
+
+const googlePlugins = [];
+
+if (
+  process.env.CLIENT_EMAIL &&
+  process.env.PRIVATE_KEY &&
+  process.env.VIEW_ID
+) {
+  googlePlugins.push({
+    resolve: `gatsby-source-google-analytics-reporting-api`,
+    options: {
+      email: process.env.CLIENT_EMAIL,
+      key: process.env.PRIVATE_KEY.replace(new RegExp('\\\\n', '\g'), '\n'),
+      viewId: process.env.VIEW_ID,
+      startDate: `2019-09-01`,
+    },
+  });
+}
 
 module.exports = {
   siteMetadata: {
     title: `Neha's Food World`,
-    description: `Amazing and easy to understand recipe website.`,
+    description: `A food website with tech articles.`,
     author: `@nehaDadhich`
   },
   plugins: [
@@ -11,7 +31,7 @@ module.exports = {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: 'UA-168017870-1"',
+          trackingId: '',
           cookieName: 'gatsby-gdpr-google-analytics', 
           anonymize: true,
           autoStartWithCookiesEnabled: false,
@@ -20,7 +40,7 @@ module.exports = {
       },
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-168017870-1",
+        trackingId: "",
         head: false
       },
     },
@@ -150,5 +170,5 @@ module.exports = {
     ],
   },
 }
-  ]
+  ].concat(googlePlugins),
 };

@@ -52,7 +52,7 @@ Kadai Paneer is a spicy paneer (cottage cheese) curry with crunchy capsicums, on
 - Kadai Masala is ready.
 
 *Onion Tomato Puree*\
-*Note:* &nbsp; I don't like the flavour of raw onion and tomato puree. So this is an additional step. However, if you enjoy that flavour just puree onion and tomatoes separately. Use ginger garlic paste. While making the curry, cook the onion puree and ginger garlic paste before tomato puree. 
+*Note:* &nbsp; I don't like the flavour of raw onion and tomato puree with paneer. So this is an additional step. However, if you enjoy that flavour just puree onion and tomatoes separately. Use ginger garlic paste. While making the curry, cook the onion puree and ginger garlic paste before tomato puree. 
 - In a pan, add 2 teaspoons of oil and once it has heated. 
 - Add the chopped onion, ginger and garlic. Cook till onions have turned translucent. 
 - Add the chopped tomatoes and cook till tomatoes are soft. 

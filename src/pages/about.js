@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import {Link} from "gatsby";
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 export default function About() {
     return (
@@ -16,7 +17,7 @@ export default function About() {
                     <div className="pad-5">
                 <h4> Hi 👋</h4>
                     <p>I am a Graduate Software Engineer at 
-                        <a className="link" target="_blank" rel="noopener noreferrer" href="https://www.americanexpress.com/"> American Express </a>.
+                        <OutboundLink className="link" target="_blank" rel="noopener noreferrer" href="https://www.americanexpress.com/"> American Express </OutboundLink>.
                     I am passionate about programming and software development.
                     I have mainly worked with backend technologies. Recently, I started learning front end development and completed 
                     <a className="link" target="_blank" rel="noopener noreferrer" href="https://www.freecodecamp.org/certification/nehadadhich/javascript-algorithms-and-data-structures"> FreeCodeCamp's JavaScript Data Structure and Algorithm Certificate </a>.
