@@ -40,7 +40,8 @@ Masala Oats is a quick healthy recipe, perfect for lunch or dinner.
 - Add the carrot, beans and peas with a pinch of salt. Cook for 3 to 4 minutes. (Add a few teaspoons of water if required for vegetables)
 - Add the corn and cook for 2 to 3 minutes. 
 - Add the tomatoes and cook for 2 to 3 minutes. 
-- Add the roasted oats and water. Cook for 10 to 15 minutes or until the oats and vegetables are cooked. 
+- Add water and boil for 2 to 3 minutes.
+- Add the roasted oats and boil for 8 to 12 minutes or until the oats and vegetables are cooked. 
 - Garnish with chopped coriander.
 
 Masala Oats is ready. It can be enjoyed on its own or with yoghurt.

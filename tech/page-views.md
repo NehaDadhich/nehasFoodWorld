@@ -47,7 +47,7 @@ Then I added a cookie consent dialog box as
         </p>
       </CookieConsent>
 ```
-I added a privacy and cookie policy page (in the footer) for vistors reference. To understand when the visitor leaves the website by clicking any of the external hyperlinks on this site, I replaced all the ```<a>``` tags with ```<OutboundLink>``` components as 
+I added a privacy and cookie policy page (in the footer) for vistors reference. To note when the visitor leaves the website by clicking any of the external hyperlinks on this site, I replaced all the ```<a>``` tags with ```<OutboundLink>``` components as 
 
 ```Javascript{numberLines: true}
 import { OutboundLink } from "gatsby-plugin-google-analytics"

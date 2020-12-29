@@ -22,12 +22,12 @@ Hara Pulao is a vegetable rice dish cooked with spicy mint puree. The fresh spic
 - 1/4th cup of beans chopped
 - 1/4th cup of green peas
 - 12 to 15 mint leaves
-- 1-inch ginger
 - 2 to 3 green chillies
 - 2 tablespoon ghee
 - 1/2 teaspoon mustard seeds
 - 1/2 teaspoon cumin seeds
 - 2 bay leaves
+- 2 cloves
 - 3 to 4 green cardamon
 - 5 to 6 cashew nuts
 - salt to taste
@@ -47,12 +47,12 @@ Hara Pulao is a vegetable rice dish cooked with spicy mint puree. The fresh spic
 ###Procedure
 *Pulao*
 - *Note:* I have used a rice cooker to cook the rice, you can cook the rice directly too. 
-- In a blender, blend mint leaves, ginger and green chillies. Add a few tablespoons of water as required. Keep aside.
+- In a blender, blend mint leaves and green chillies. Add a few tablespoons of water as required. Keep aside.
 - Start cooking the rice in a rice cooker or pot. 
 - In the meanwhile, take a pan and add ghee to it. 
 - Once the ghee has melted add the mustard seeds and let them crackle. 
 - Once it is done, add the cumin seeds and let them crackle. 
-- Add the bay leaves, green cardamom and cashew nuts. Stir for 2 to 3 minutes.
+- Add the bay leaves, cloves, green cardamom and cashew nuts. Stir for 2 to 3 minutes.
 - Add the prepared mint puree to this and cook for 2 to 3 minutes. 
 - Add the potatoes, carrot, beans and peas to this. Cook for 4 to 5 minutes. 
 - Add these sautéd vegetables and salt to taste to the rice still cooking in the rice cooker or pot. 
