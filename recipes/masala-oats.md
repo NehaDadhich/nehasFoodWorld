@@ -27,7 +27,7 @@ Masala Oats is a quick healthy recipe, perfect for lunch or dinner.
 - 5 to 6 curry leaves
 - 4 teaspoon oil
 - 1/2 teaspoon turmeric powder
-- 1 teaspoon red chilly powder
+- 1 teaspoon red chilli powder
 - <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank" rel="noopener noreferrer" class="link"> 1 teaspoon garam masala or ground spices </a>
 - salt to taste
 - 2 teaspoon coriander chopped
@@ -41,7 +41,7 @@ Masala Oats is a quick healthy recipe, perfect for lunch or dinner.
 - Add the corn and cook for 2 to 3 minutes. 
 - Add the tomatoes and cook for 2 to 3 minutes. 
 - Add water and boil for 2 to 3 minutes.
-- Add the roasted oats and boil for 8 to 12 minutes or until the oats and vegetables are cooked. 
+- Add the roasted oats with turmeric powder, red chilli powder and garam masala. Boil for 8 to 12 minutes or until the oats and vegetables are cooked. 
 - Garnish with chopped coriander.
 
 Masala Oats is ready. It can be enjoyed on its own or with yoghurt.

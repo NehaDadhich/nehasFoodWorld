@@ -23,7 +23,7 @@ Soya Mutter Cutlets are simple to make high protein snack made with soya and gre
 - 1 tablespoon sesame seeds
 - 1 tablespoon cumin seeds
 - <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank" rel="noopener noreferrer" class="link"> 1 tsp garam masala or ground spices </a>
-- 1/2 teaspoon red chilly powder
+- 1/2 teaspoon red chilli powder
 - 1/2 teaspoon ginger garlic paste
 - oil for shallow fry
 - salt to taste
@@ -39,7 +39,7 @@ Soya Mutter Cutlets are simple to make high protein snack made with soya and gre
 *Soya Mutter Cutlet*
 - Soak the soya granules in 1 cup of hot water for 10 minutes. Once it has cooled down, squeeze out the water and empty in a bowl. 
 - Add the peas and mashed potato to the soya granules. 
-- Add the curry leaves, sesame seeds, cumin seeds, red chilly powder, gram flour, salt and  ginger garlic paste
+- Add the curry leaves, sesame seeds, cumin seeds, red chilli powder, gram flour, salt and  ginger garlic paste
 - Start mixing all the ingredients well. Try making a cutlet and ensure it does not break easily. 
 - If it breaking easily, add little gram flour and try again. 
 - (For a crispy coating, you could make corn flour and all-purpose flour paste, dip the cutlets in the paste and coat with breadcrumbs).

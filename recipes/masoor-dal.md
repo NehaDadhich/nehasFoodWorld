@@ -23,7 +23,7 @@ Masoor dal or red split lentils is a high fibre and easy to digest lentils. I co
 - 1/2 teaspoon cumin seeds
 - 5 to 6 curry leaves
 - 1/2 teaspoon turmeric powder
-- 1 teaspoon red chilly powder
+- 1 teaspoon red chilli powder
 - salt to taste
 - 2 tablespoon oil
 - 2 teaspoon coriander chopped for garnishing
@@ -36,7 +36,7 @@ Masoor dal or red split lentils is a high fibre and easy to digest lentils. I co
 - Add the fenugreek leaves and sauté for a minute.
 - Add the tomatoes and cook for 4 to 5 minutes. 
 - Add the soaked lentils and water. 
-- Add turmeric powder and red chilly powder. Boil the dal for 15 to 20 minutes. If the dal is not cooked yet, boil for few more minutes. Stir occasionally in middle.
+- Add turmeric powder and red chilli powder. Boil the dal for 15 to 20 minutes. If the dal is not cooked yet, boil for few more minutes. Stir occasionally in middle.
 - Add salt to taste and cook for five minutes. 
 - Garnish with chopped coriander.
 
