@@ -44,7 +44,7 @@ tablespoons of butter
 - Sauté for a minute and then add crushed ginger, onion and cook till onion turn golden. 
 - Add the cashew nuts and sauté for a minute. Then add the tomatoes and cook till tomatoes turn soft. 
 - Add a tablespoon of butter and once the butter melts. Turn off the flame. Empty the contents in a plate and let it cool down.
-- Once everything has cooled down, remove the bay leaves and three green cardamoms and keep aside.
+- Once everything has cooled down, remove the bay leaves and green cardamoms and keep aside.
 - Blend the remaining ingredients into a fine puree. Add a few tablespoons of water if required.
 
 *Curry*
