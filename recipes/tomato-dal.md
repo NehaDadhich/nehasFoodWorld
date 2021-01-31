@@ -23,7 +23,7 @@ Tomato Dal is a simple, healthy lentil curry of tomatoes. I like to use three ki
 - 1/2 teaspoon cumin seeds
 - 7 to 8 curry leaves
 - 1/2 teaspoon turmeric powder
-- a teaspoon red chilly powder
+- a teaspoon red chilli powder
 - salt to taste
 - Two tablespoons of oil
 - 7 to 8 coriander sprigs chopped for garnishing
@@ -35,7 +35,7 @@ Tomato Dal is a simple, healthy lentil curry of tomatoes. I like to use three ki
 - Add the curry leaves, crushed ginger and chopped garlic.
 - Sauté till the raw smell of ginger and garlic is gone.
 - Add the tomatoes and cook for 4 to 5 minutes.
-- Add turmeric powder, red chilly powder and cook for 2 to 3 minutes.
+- Add turmeric powder, red chilli powder and cook for 2 to 3 minutes.
 - Add the cooked dal and 0.5 cups of water.
 - Add salt to taste and cook for five minutes.
 - Garnish with chopped coriander.
