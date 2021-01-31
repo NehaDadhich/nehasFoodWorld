@@ -22,7 +22,7 @@ Tomato Chutney is a spicy sauce cooked with tomatoes and a good tempering adds a
 - 1/2 teaspoon mustard seeds
 - 1/2 teaspoon cumin seeds
 - 1/2 teaspoon turmeric powder
-- 1/2 teaspoon red chilly powder (optional)
+- 1/2 teaspoon red chilli powder (optional)
 - 3 teaspoon oil
 - 3 to 4 coriander sprigs chopped
 - salt to taste
@@ -33,7 +33,7 @@ Tomato Chutney is a spicy sauce cooked with tomatoes and a good tempering adds a
 - Then add the cumin seeds and once they have crackled, add the split black lentils, curry leaves and dry red chillies. 
 - Cook for 2 to 3 minutes, separate half of the tempering in a bowl. 
 - Add the chopped garlic and cook for 2 to 3 minutes. 
-- Add the chopped tomatoes, add salt to taste, turmeric powder and red chilly powder. 
+- Add the chopped tomatoes, add salt to taste, turmeric powder and red chilli powder. 
 - Once the tomatoes are soft. Empty the contents in a plate and puree once it has cooled down. Add water as required. 
 - Garnish with the remaining tempering and chopped coriander.
 

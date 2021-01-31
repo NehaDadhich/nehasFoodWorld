@@ -38,7 +38,7 @@ Kadai Paneer is a spicy paneer (cottage cheese) curry with crunchy capsicums, on
 - 2 tablespoon oil
 - 1 teaspoon butter
 - 1/2 teaspoon turmeric powder
-- 1/2 red chilly powder (optional)
+- 1/2 red chilli powder (optional)
 - salt to taste
 - 3 to 5 coriander spring, chopped
 
@@ -63,7 +63,7 @@ Kadai Paneer is a spicy paneer (cottage cheese) curry with crunchy capsicums, on
 - Once the oil has heated, add cumin seeds and let them crackle. 
 - Then add the dry fenugreek leaves and stir it once. Add the prepared puree. 
 - Add 1 tablespoon of prepared Kadai Masala. Increase or decrease the quantity of Kadai Masala as per your preference. (Store the remaining Kadai Masala in an airtight container. It can be used again or it can be used to spice up other curries).
-- Add turmeric powder, red chilly powder and salt to taste. 
+- Add turmeric powder, red chilli powder and salt to taste. 
 - Stir the curry and let it cook. *Note:* &nbsp; If you are using a Kadai or Wok, curry can get burnt easily so keep an eye. 
 - Once the curry is boiled. Turn the flame off.
 - In a separate pan, add 1 tablespoon oil and butter. 

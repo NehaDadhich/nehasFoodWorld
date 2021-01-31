@@ -29,7 +29,7 @@ Tamarind Rice is a popular sour, spicy and tangy South Indian vegan recipe. Temp
 - 3 to 4 dry red chillies broken into two
 - <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank" rel="noopener noreferrer" class="link"> 1 teaspoon garam masala or ground spices </a>
 - 1/2 teaspoon turmeric powder
-- 1/2 teaspoon red chilly powder
+- 1/2 teaspoon red chilli powder
 - salt to taste
 - 2 teaspoon coriander for garnishing chopped
 
@@ -46,7 +46,7 @@ Tamarind Rice is a popular sour, spicy and tangy South Indian vegan recipe. Temp
 - Sauté for a minute then add the split and skinned black gram. 
 - Sauté for a minute then add the split and skinned Bengal gram (filter the water out). 
 - Sauté till the lentils turn golden brown. 
-- Add the soaked and filtered tamarind water with turmeric powder, red chilly powder, garam masala and salt to taste to the remaining tempering.
+- Add the soaked and filtered tamarind water with turmeric powder, red chilli powder, garam masala and salt to taste to the remaining tempering.
 - Boil the tamarind sauce for 5 to 10 minutes. The oil will get separated from the sauce at this point if not boil for some more time.
 - Turn off the flame and add the cooked rice to the prepared tamarind sauce along with fried or roasted peanuts.
 - Garnish with chopped coriander.

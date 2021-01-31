@@ -22,7 +22,7 @@ One of the popular Indian street food is bhel puri. It's a quick and easy to mak
 - 1/2 tbsp sugar
 - 1/2 teaspoon green chillies
 - 4 tbsp mint leaves
-- 1/2 teaspoon red chilly powder
+- 1/2 teaspoon red chilli powder
 - 1/4 teaspoon black salt
 - 1/4 teaspoon cumin seed powder (if not available, dry roast cumin seeds and blend in a fine powder)
 - salt to taste
@@ -48,7 +48,7 @@ One of the popular Indian street food is bhel puri. It's a quick and easy to mak
 
 *Final mixing*
 - In a bowl, add finely chopped onions, tomatoes and potatoes. 
-- Add red chilly powder, black salt, cumin seed powder and salt to taste. 
+- Add red chilli powder, black salt, cumin seed powder and salt to taste. 
 - Add the prepared sauces to it. 
 - The following steps should be done, when you are ready to serve to ensure bhel puri is still crispy. 
 - Add the puffed rice to onion, tomatoes and potatoes mix. Give it a nice mix.

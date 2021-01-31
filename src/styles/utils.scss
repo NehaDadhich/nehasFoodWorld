@@ -30,3 +30,11 @@
 .right-div {
   text-align: right;
 }
+
+.reading-progress-bar {
+  position: sticky;
+  height: 5px;
+  top: 0;
+  @extend .is-yellow-bg;
+  transition-timing-function: ease-in-out;
+}

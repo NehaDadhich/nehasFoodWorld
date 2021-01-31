@@ -24,7 +24,7 @@ Green peas, potatoes and rice are like a perfect combination which always turns 
 - 1/2 teaspoon mustard seeds
 - 1/2 teaspoon cumin seeds
 - 1/2 teaspoon turmeric powder
-- 1 teaspoon red chilly powder
+- 1 teaspoon red chilli powder
 - <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank" rel="noopener noreferrer" class="link"> 1 teaspoon garam masala or ground spices </a>
 - salt to taste
 - 1/4 teaspoon butter (only if frozen peas are used)
@@ -39,7 +39,7 @@ Green peas, potatoes and rice are like a perfect combination which always turns 
 - Once it is done, add the cumin seeds and let them crackle. 
 - Add the bay leaves and cloves. Stir for 2 to 3 minutes.
 - Add the chopped potatoes to it and cook them till they get a bit crispy. ( Add peas now if they are fresh and cook with potatoes )
-- Then add the chopped tomatoes with red chilly powder, turmeric powder, garam masala and salt to taste. 
+- Then add the chopped tomatoes with red chilli powder, turmeric powder, garam masala and salt to taste. 
 - Once the tomatoes are cooked, add this cooked potato and tomato gravy to the rice, still cooking in the rice cooker or pot. 
 - Give it a nice stir and let it cook. 
 - The following step is only if you have used frozen peas or else skip to garnishing. 

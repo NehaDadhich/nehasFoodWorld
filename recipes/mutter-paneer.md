@@ -24,7 +24,7 @@ Mutter Paneer is a yummy, mildly spiced curry cooked with paneer (cottage cheese
 - 8 to 10 cashew nuts
 - 1/2 teaspoon mustard seeds
 - 1/2 teaspoon cumin seeds
-- 1 teaspoon red chilly powder
+- 1 teaspoon red chilli powder
 - 1/2 teaspoon turmeric powder
 - <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank" rel="noopener noreferrer" class="link"> 1 teaspoon garam masala or ground spices </a>
 - 3 tablespoon oil
@@ -45,7 +45,7 @@ Mutter Paneer is a yummy, mildly spiced curry cooked with paneer (cottage cheese
 - Add one bay leaf and one broken cinnamon stick, 1 teaspoon of dry fenugreek leaves and stir for a minute. 
 - Add peas and cook till peas are soft.
 - Add the prepared puree to the peas. 
-- Add garam masala, red chilly powder, turmeric powder and salt to taste. Cook for 10 to 12 minutes. Keep stirring every now and then to ensure the curry doesn't burn.
+- Add garam masala, red chilli powder, turmeric powder and salt to taste. Cook for 10 to 12 minutes. Keep stirring every now and then to ensure the curry doesn't burn.
 - Add the chopped paneer and cook for 5 to 8 minutes. 
 
 Mutter paneer is ready, garnish it with chopped coriander and serve with rice or your favourite bread. 

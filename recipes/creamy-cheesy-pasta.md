@@ -24,7 +24,7 @@ Creamy Cheesy Pasta is simple to make pasta with a cheesy and creamy sauce. You 
 - 2 tablespoon unsalted butter for the sauce
 - 1 tablespoon whole wheat flour or all-purpose flour
 - 1 teaspoon black pepper powder
-- 1 teaspoon dry red chilly flakes
+- 1 teaspoon dry red chilli flakes
 - 1 teaspoon Italian-style herb blend
 - 1/4th cup of chopped black or green olives
 - 1/2 cup of chopped bell peppers
@@ -44,7 +44,7 @@ Creamy Cheesy Pasta is simple to make pasta with a cheesy and creamy sauce. You 
 - Once the flour turns into a pale golden colour. Lower the flame and add the cream and milk to the pan. 
 - Boil on a lower flame for 3 to 4 minutes and keep stirring it continuously.
 - Add the cheese and keep stirring it continuously and boil for 4 to 5 minutes. 
-- Add black pepper powder, dry red chilly flakes and Italian-style herb blend.
+- Add black pepper powder, dry red chilli flakes and Italian-style herb blend.
 - Turn off the flame and add salt to taste.
 
 *Pasta with vegetables*

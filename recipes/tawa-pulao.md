@@ -30,7 +30,7 @@ Tawa Pulao is rice tossed with vegetables and spices. It is a quick and a beginn
 - 1/2 teaspoon mustard seeds
 - 1/2 teaspoon cumin seeds
 - 1/2 teaspoon turmeric powder
-- 1/2 teaspoon red chilly powder
+- 1/2 teaspoon red chilli powder
 - <a href="https://en.wikipedia.org/wiki/Garam_masala" target="_blank" rel="noopener noreferrer" class="link"> 1 teaspoon garam masala or ground spices </a>
 - 1 teaspoon pav bhaji masala
 - salt to taste
@@ -44,7 +44,7 @@ Tawa Pulao is rice tossed with vegetables and spices. It is a quick and a beginn
 - Add chopped carrot, beans, potatoes, peas and corn to it. 
 Add little salt at this stage, this will speed up the cooking. 
 - Once the vegetables are nearly done, add the chopped tomatoes.
-- Add turmeric powder, red chilly powder, garam masala, pav bhaji masala and remaining salt to it. Cook for 2 to 3 minutes.
+- Add turmeric powder, red chilli powder, garam masala, pav bhaji masala and remaining salt to it. Cook for 2 to 3 minutes.
 - Once the tomatoes are done, add the cooked rice and cook for 3 to 5 minutes.
 
 Tawa Pulao is ready.
