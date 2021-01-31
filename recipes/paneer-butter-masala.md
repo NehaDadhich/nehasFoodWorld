@@ -19,7 +19,9 @@ Paneer Butter Masala is a mildly spiced curry cooked with paneer (cottage cheese
 - two cups of tomatoes chopped
 - 1-inch ginger crushed
 - 0.5 cups of cream
-- three tablespoons of butter
+- 
+
+tablespoons of butter
 - a teaspoon dry fenugreek leaves
 - Two bay leaves
 - Three green cardamoms
