@@ -17,7 +17,7 @@ Tomato Dal is a simple, healthy lentil curry of tomatoes. I like to use three ki
 - 1/2 cup of equal quantities of red split lentils, pigeon pea lentils and split husked mung lentils. Washed and soaked in half a cup of water for 15 to 20 minutes.
 - 2 cups of water (reduce the quantity to half cup to increase the thickness.)
 - 1-inch ginger crushed
-- a teaspoon finely chopped garlic
+- a teaspoon of finely chopped garlic
 - 1.5 cups of tomatoes chopped
 - 1/2 teaspoon mustard seeds
 - 1/2 teaspoon cumin seeds
