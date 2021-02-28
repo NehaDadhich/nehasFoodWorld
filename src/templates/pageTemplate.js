@@ -3,7 +3,8 @@ import {Link, graphql } from "gatsby";
 import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import ReadingProgress from "../components/readingProgress"
+import ReadingProgress from "../components/readingProgress";
+import ScrollToTop from "../components/scrollToTop";
 
 export default ({
   data: {
@@ -33,6 +34,7 @@ export default ({
               <div className="wrapper pad-10-l pad-10-b pad-10-r">
                 <div className="article-content is-light-grey-bg is-black">
                 <h1 className="margin-3-b is-pink">{title}</h1>
+                <h5 className="margin-3-b is-black"> By <span> <Link className="link" to="/about"> Neha Dadhich</Link></span></h5>
                 <h5 className="margin-3-b is-black"> 👀 Total views: {pageViews === null ? 0 : pageViews.totalCount} </h5>
                  {displayImage && <Img className="display-image"
                 fluid={displayImage.childImageSharp.fluid}
@@ -44,6 +46,7 @@ export default ({
                 />
               </div>
               </div>
+              <ScrollToTop showBelow={30}/>
             </div>
           </div>
           </div>

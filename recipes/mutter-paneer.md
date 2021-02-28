@@ -31,6 +31,8 @@ Mutter Paneer is a yummy, mildly spiced curry cooked with paneer (cottage cheese
 - salt to taste
 - 6 to 8 coriander sprig chopped
 
+###Tips
+- For soft paneer, get the fresh paneer from the shop. Then boil paneer for 5 to 6 minutes. Then transfer the paneer to a bowl of chilled water. Remove from chilled water when you are ready to add it to curry.
 
 ###Procedure
 - In a pan, add 1 tablespoon oil and once the oil has heated. 

@@ -4,7 +4,7 @@ title: "Creamy Cheesy Pasta"
 displayImage: ./images/creamy-cheesy-pasta.png
 date: 2020-12-20T00:00:00.000Z
 description: "Pasta in a cheesy and creamy sauce with vegetables and spices."
-tags: ["Pasta", "Dairy"]
+tags: ["Pasta", "Dairy", "Cheese"]
 type: "recipe"
 ---
 

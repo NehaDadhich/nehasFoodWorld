@@ -18,6 +18,7 @@
 @import "./utils.scss";
 @import "./code.scss";
 @import "./footer.scss";
+@import "./scrollToTop.scss";
 
 @for $i from 1 through 6 {
     h#{7 - $i} {
@@ -40,7 +41,8 @@
 body {
     margin: 0px;
     font-family: Lato;
-    font-size: 1.1vm;
+    font-size: 1em;
+    word-spacing: normal;
 }
 
 h1 { 
