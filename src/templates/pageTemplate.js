@@ -4,7 +4,6 @@ import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ReadingProgress from "../components/readingProgress";
-import ScrollToTop from "../components/scrollToTop";
 
 export default ({
   data: {
@@ -46,7 +45,6 @@ export default ({
                 />
               </div>
               </div>
-              <ScrollToTop showBelow={30}/>
             </div>
           </div>
           </div>

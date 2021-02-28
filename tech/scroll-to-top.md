@@ -83,7 +83,7 @@ Then I added style to the component as below:
 
   .scrollTop:focus {outline:0;}
 ```
-Finally, I added the created scrollToTop component to the pageTemplate as:
+Finally, I added the created scrollToTop component to the layout as:
 
 ```Javascript{numberLines: true}
 ...

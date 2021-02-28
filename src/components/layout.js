@@ -4,6 +4,7 @@ import Header from "../components/header";
 import CookieConsent, {Cookies} from "react-cookie-consent"
 import Footer from "../components/footer";
 import { Link } from "gatsby";
+import ScrollToTop from "../components/scrollToTop";
 
 const Layout = ({ children }) => {
   return (
@@ -35,7 +36,7 @@ const Layout = ({ children }) => {
           <Link to="/disclaimer" className="cookie-consent-link"> Privacy and Cookie policy </Link> carefully. 
         </p>
       </CookieConsent>
-    
+      <ScrollToTop showBelow={30}/>
       <Header />
       </div>
       <main className="fixed-height pad-5-t is-white-bg">{children}</main>
