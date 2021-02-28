@@ -53,13 +53,13 @@ export default ScrollToTop
 Then I added style to the component as below: 
 
 ```CSS{numberLines: true}
-    .scrollTop {
+  .scrollTop {
     position: fixed;
     display: inline-block;
-    border: none;
+    border: 10px;
     padding: 10px 10px 35px;
     border-radius: 50%;
-    @extend .is-light-grey-bg;
+    @extend .is-light-blue-bg;
     @extend .is-black;
     z-index: 1000;
     max-width: 40px;
@@ -73,7 +73,6 @@ Then I added style to the component as below:
     cursor: pointer;
     font-size: 40px;
     right: 2%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   }
 
   .scrollTop:hover{
@@ -83,10 +82,6 @@ Then I added style to the component as below:
   }
 
   .scrollTop:focus {outline:0;}
-  
-  .dark-mode .scrollTop {
-    box-shadow: 0 1px 2px 0 #a6a6a6;
-  }
 ```
 Finally, I added the created scrollToTop component to the pageTemplate as:
 
