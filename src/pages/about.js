@@ -10,6 +10,8 @@ export default function About() {
         <Layout>
         <SEO title="About" />
             <div className="container-small pad-10-b pad-10-l pad-10-r">
+            <h3><Link className="link" to="/recipes"> {"<<"} Latest Recipes </Link></h3>
+            <h3><Link className="link" to="/making-of"> {"<<"} Making of </Link></h3>
             <div className="row">
                 <h1 class="is-pink is-hero-menu"> Welcome to Neha's Food World</h1>
                 </div>

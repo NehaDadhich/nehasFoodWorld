@@ -19,9 +19,7 @@ Paneer Butter Masala is a mildly spiced curry cooked with paneer (cottage cheese
 - two cups of tomatoes chopped
 - 1-inch ginger crushed
 - 0.5 cups of cream
-- 
-
-tablespoons of butter
+- 3 tablespoons of butter
 - a teaspoon dry fenugreek leaves
 - Two bay leaves
 - Three green cardamoms
@@ -37,6 +35,8 @@ tablespoons of butter
 - 1/2 teaspoon of cream for garnishing
 - 6 to 8 coriander sprig chopped for garnishing
 
+###Tips
+- For soft paneer, get the fresh paneer from the shop. Then boil paneer for 5 to 6 minutes. Then transfer the paneer to a bowl of chilled water. Remove from chilled water when you are ready to add it to curry.
 
 ###Procedure
 *Gravy*

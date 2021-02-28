@@ -42,6 +42,8 @@ Kadai Paneer is a spicy paneer (cottage cheese) curry with crunchy capsicums, on
 - salt to taste
 - 3 to 5 coriander spring, chopped
 
+###Tips
+- For soft paneer, get the fresh paneer from the shop. Then boil paneer for 5 to 6 minutes. Then transfer the paneer to a bowl of chilled water. Remove from chilled water when you are ready to add it to curry.
 
 ###Procedure
 *Kadai Masala*

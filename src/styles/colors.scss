@@ -6,6 +6,8 @@ $brand-colors:
 ("xq", #F7F9FF, #151718),
 ("light-grey", #F9F9F9,#161515),
 ("dark-grey", #E0E0E0, #131212 ),
+("purple", #BA83C4, #E7D5F9),
+("teal",  #008B8B, #008080),
 ("blue", #254eaf, #2e96d3);
 
 @each $color in $brand-colors {
