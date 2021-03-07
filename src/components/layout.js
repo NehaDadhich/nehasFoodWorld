@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
         location="bottom"
         buttonText="OK"
         cookieName="gatsby-gdpr-google-analytics"
-        style={{ background: "#BA83C4", padding: 5 }}
+        style={{ background: "#BA83C4", padding: 5, zIndex: 2000 }}
         buttonStyle={{
           color: "black",
           fontSize: "13px",

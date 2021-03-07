@@ -59,8 +59,8 @@ Then I added style to the component as below:
     border: 10px;
     padding: 10px 10px 35px;
     border-radius: 50%;
-    @extend .is-light-blue-bg;
-    @extend .is-black;
+    @extend .is-blue-bg;
+    @extend .is-white;
     z-index: 1000;
     max-width: 40px;
     justify-content: center;
