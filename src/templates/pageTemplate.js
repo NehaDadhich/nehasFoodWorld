@@ -34,7 +34,7 @@ export default ({
                 <div className="article-content is-light-grey-bg is-black pad-10-l pad-10-r">
                 <h1 className="margin-3-b is-pink">{title}</h1>
                 <h5 className="margin-3-b is-black"> By <span> <Link className="link" to="/about"> Neha Dadhich</Link></span></h5>
-                <h5 className="margin-3-b is-black"> 👀 Total views: {pageViews === null ? 0 : pageViews.totalCount} </h5>
+                <h5 className="margin-3-b is-black"> 👀 Total views: {pageViews === null ? 0 : pageViews.totalCount} <sup> * </sup> </h5>
                  {displayImage && <Img className="display-image"
                 fluid={displayImage.childImageSharp.fluid}
               />} 

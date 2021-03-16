@@ -24,7 +24,7 @@ const Footer = () => {
                 <>
                 <div class="footer is-black">
                     <p className="margin-0-b margin-1-t">Made with ❤️ by Neha Dadhich </p>
-                <p className="margin-0-b margin-1-t"> This website has <span className="is-pink">{totalCount} </span> views. This website uses Google Analytics to analyse trends and views. Please read the 
+                <p className="margin-0-b margin-1-t"> This website has <span className="is-pink">{totalCount} </span> <sup> * </sup> views. This website uses Google Analytics to analyse trends and views. Please read the 
                 <Link to="/disclaimer" className="link"> disclaimer</Link> carefully.
                 </p>
                 <p className="margin-0-b margin-1-t">  For ideas, discussions and feedback find me at &nbsp;
@@ -33,6 +33,7 @@ const Footer = () => {
                      &nbsp; <OutboundLink href="mailto:nehadadhich97@gmail.com" className="social-icon" aria-label="Neha's Gmail Link"> 
                      <FontAwesomeIcon icon={faEnvelope} className="social-icon" /> </OutboundLink>
                 </p>
+                <p className="margin-0-b margin-1-t"> <sup> * </sup> All the page views of this website are updated whenever this site is updated, rebuilt and deployed. </p>
                 <p className="margin-0-b margin-1-t">
                 Developed using <OutboundLink className="link" target="_blank" rel="noopener noreferrer" href="https://github.com/slarsendisney/gatsby-mango">Samuel Larsen-Disney's Mango Gatsby boilerplate </OutboundLink>. </p>
                 </div>
