@@ -97,7 +97,7 @@ module.exports = {
                     MarkdownRemark: {
                         title: (node)=> node.frontmatter.title,
                         tags: (node) => node.frontmatter.tags,
-                        path: (node) => node.frontmatter.path
+                        path: (node) => node.frontmatter.path,
     }, 
   }
 }

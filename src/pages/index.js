@@ -18,7 +18,7 @@ class Start extends Component {
         <div>
             <SEO title="Home" />
     <div className="margin-5-b"> 
-            <Search />
+            {/* <Search /> */}
         </div>
         <div className="pad-5-b">
             {recipeSection(recipes)}
@@ -51,6 +51,9 @@ export default Start
   {recipes.map(({node}) => (
      <div className="col-xs-12 col-md-4">
     <div>
+      {
+      console.log(node)
+      }
     <RecipePreview {...node.frontmatter} className="is-black"/>
     </div>
   </div> ))}
