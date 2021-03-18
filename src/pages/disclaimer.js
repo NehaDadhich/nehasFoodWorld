@@ -2,15 +2,20 @@ import React from "react";
 import { Link } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import {faHome} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-export default function lost() {
+export default function disclaimer() {
   return (
     <Layout>
       <SEO title="Disclaimer" />
       <div className="is-grey">
         <div className="row pad-5-t pad-5-l pad-5-r pad-20-b">
           <div className="col-xs-12 col-md-12 pad-10-l is-black">
-            <h1 className="is-hero-menu margin-0">DISCLAIMER</h1>
+          <div className="row margin-0-t is-black pad-2-l" style={{fontSize: '1.5em'}}>
+            <Link to="/"> <FontAwesomeIcon className="icon-link" icon={faHome}/> </Link>
+            <span className="is-black"> &nbsp;  {"<<"} DISCLAIMER </span>
+           </div>
             <p>All views expressed on this site are my own and do not represent the opinions of anyone I am, have been, or will be assoicated with</p>
             <h2>PRIVACY POLICY </h2>
             <p> Privacy of the visitors is one of the top priorities of this website. Please read this page carefully to understand the privacy policy.</p>

@@ -15,7 +15,7 @@ if (
       email: process.env.CLIENT_EMAIL,
       key: process.env.PRIVATE_KEY.replace(new RegExp('\\\\n', '\g'), '\n'),
       viewId: process.env.VIEW_ID,
-      startDate: `2019-09-01`,
+      startDate: `2019-09-01`
     },
   });
 }
@@ -23,24 +23,27 @@ if (
 module.exports = {
   siteMetadata: {
     title: `Neha's Food World`,
+    siteUrl: `https://nehasfoodworld.web.app/`,
     description: `A food website with tech articles.`,
     author: `@nehaDadhich`
   },
   plugins: [
-    {
+     { 
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: '',
+          trackingId: 'UA-168017870-1', 
           cookieName: 'gatsby-gdpr-google-analytics', 
-          anonymize: true,
-          autoStartWithCookiesEnabled: false,
+          anonymize: true, 
+          allowAdFeatures: false 
         },
         environments: ['production', 'development']
-      },
+      }
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: '',
+        trackingId: 'UA-168017870-1',
         respectDNT: true,
         head: false
       },

@@ -3,6 +3,8 @@ import { graphql, Link } from "gatsby";
 import RecipePreview from "../components/recipePreview";
 import SEO from "../components/seo";
 import Layout from "../components/layout";
+import {faHome} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class Recipes extends Component {
   render() {
@@ -17,8 +19,11 @@ class Recipes extends Component {
         description={"All recipes"}
       />
       <div className="pad-2-b pad-8-l margin-0-b pad-5-t">
-          <h2 className="margin-0-t is-black pad-2-l" >Latest recipes</h2>
-
+          <div className="row margin-1-b pad-2-l" style={{fontSize: '1.5em'}}>
+            <Link to="/"> <FontAwesomeIcon className="icon-link" icon={faHome}/> </Link>
+            <span className="is-black"> &nbsp;  {"<<"} Latest Recipes </span>
+           </div>
+           <h4 className="is-black">Browse through all of my mouth-watering vegetarian recipes.</h4>
         <div className="row margin-0-l pad-5-t pad-5-r">
           {
           recipes.map(({node}) => {

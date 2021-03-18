@@ -1,8 +1,10 @@
 import React, {Component} from "react";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import TechPreview from "../components/techPreview";
 import SEO from "../components/seo";
 import Layout from "../components/layout";
+import {faHome} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 class MakingOf extends Component {
@@ -17,8 +19,11 @@ class MakingOf extends Component {
         description={"The tech behind the website"}
       />
             <div className="pad-2-b pad-8-l pad-5-t">
-              <h2 className="margin-0-t is-black pad-2-l" >Making of</h2>
-
+            <div className="row margin-0-t is-black pad-2-l" style={{fontSize: '1.5em'}}>
+            <Link to="/"> <FontAwesomeIcon className="icon-link" icon={faHome}/> </Link>
+            <span className="is-black"> &nbsp;  {"<<"} Making of </span>
+           </div>
+           <h4 className="is-black pad-2-l">This website is open source and this sections contains a few articles on how this website is built. </h4>
             <div className="row margin-0-l pad-5-t pad-5-r">
               {
                 

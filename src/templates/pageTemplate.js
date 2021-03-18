@@ -4,6 +4,8 @@ import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import ReadingProgress from "../components/readingProgress";
+import {faHome} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export default ({
   data: {
@@ -27,8 +29,11 @@ export default ({
         <div className={`post`} ref={target}>
         <div>
             <div className="col-xs-12">
-              <div className="wrapper pad-1-l">
-      <h3 className="is-blue"> {"<<"}<Link className="link" to={type == "recipe" ? "/recipes/" : "/making-of/"}> {type == "recipe" ? "All recipes ": "Making of"} </Link> </h3>
+              <div className="row wrapper pad-10-l pad-5-b pad-5-t" style={{fontSize: '1.5em'}}>
+            <Link to="/"> <FontAwesomeIcon className="icon-link" icon={faHome}/> </Link>
+            <span className="is-black"> &nbsp;  {"<<"} 
+            <Link className="link" to={type == "recipe" ? "/recipes/" : "/making-of/"}> {type == "recipe" ? "All recipes ": "Making of"} </Link>
+             </span>
             </div>
               <div className="wrapper pad-10-b">
                 <div className="article-content is-light-grey-bg is-black pad-10-l pad-10-r">
