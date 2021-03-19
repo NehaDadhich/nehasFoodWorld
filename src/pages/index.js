@@ -3,7 +3,6 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import RecipePreview from "../components/recipePreview";
 import TechPreview from "../components/techPreview";
-import Search from "../components/search";
 import { Link } from "gatsby";
 import { graphql } from "gatsby";
 
@@ -17,9 +16,6 @@ class Start extends Component {
     <Layout className="is-white-bg">
         <div>
             <SEO title="Home" />
-    <div className="margin-5-b"> 
-            {/* <Search /> */}
-        </div>
         <div className="pad-5-b">
             {recipeSection(recipes)}
             <div className="pad-15-r pad-1-t right-div">

@@ -5,8 +5,10 @@ import CookieConsent from "react-cookie-consent"
 import Footer from "../components/footer";
 import { Link } from "gatsby";
 import ScrollToTop from "../components/scrollToTop";
- import { useLocation } from "@reach/router"
- import  { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies'
+import { useLocation } from "@reach/router"
+import  { initializeAndTrack } from 'gatsby-plugin-gdpr-cookies'
+import {faSearch} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Layout = ( { children } ) => {
  const location = useLocation()
@@ -57,6 +59,7 @@ const Layout = ( { children } ) => {
           </p>
         </CookieConsent>
         <ScrollToTop showBelow={30}/>
+        <button className="searchButton"><FontAwesomeIcon  className="searchIcon" icon={faSearch} /> </button>
         <Header />
         </div>
         <main className="fixed-height pad-5-t is-white-bg">{children}</main>
