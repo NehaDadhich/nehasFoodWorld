@@ -59,7 +59,11 @@ const Layout = ( { children } ) => {
           </p>
         </CookieConsent>
         <ScrollToTop showBelow={30}/>
-        <button className="searchButton"><FontAwesomeIcon  className="searchIcon" icon={faSearch} /> </button>
+        <Link to="/search">
+          <button className="searchButton">
+            <FontAwesomeIcon  className="searchIcon" icon={faSearch} /> 
+          </button>
+        </Link>
         <Header />
         </div>
         <main className="fixed-height pad-5-t is-white-bg">{children}</main>

@@ -20,7 +20,9 @@ const Tags = ( { pageContext, data} ) => {
         <div className="row margin-1-b pad-2-l" style={{fontSize: '1.5em'}}>
             <Link to="/"> <FontAwesomeIcon className="icon-link" icon={faHome}/> </Link>
             <span className="is-black"> &nbsp;  {"<<"} <Link className="link" to="/recipes/"> Latest recipes </Link> </span>
-            <h3 className="is-black">Recipes tagged as <span className="is-pink">{tag} </span> </h3>
+           </div>
+           <div className="row margin-1-b pad-2-l" style={{fontSize: '1.5em'}}>
+           <h3 className="is-black">Recipes tagged as <span className="is-pink">{tag} </span> </h3>
            </div>
         <div className="row margin-0-l pad-5-t pad-5-r">
           {
