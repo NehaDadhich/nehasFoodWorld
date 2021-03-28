@@ -7,6 +7,7 @@ export default function RecipePreview ({title, path, tags, description, displayI
     return  <div className="margin-6-b margin-5-r">
   <Link to={path} className="link" id="path">
     <div className="grow image-card is-light-grey-bg">
+      {console.log(displayImage)}
     <Img
           fluid={displayImage.childImageSharp.fluid}
           className="cover-image"

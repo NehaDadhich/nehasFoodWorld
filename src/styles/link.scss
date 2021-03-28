@@ -3,17 +3,17 @@
   text-decoration: none !important;
 }
 .link:hover {
-  border-bottom: 1px solid #BA83C4 !important;
+ @extend .is-purple;
   text-decoration: none !important;
   transform: scale(1.05);
 }
 
-.dark-mode 
-.link:hover {
-  border-bottom: 1px solid #E7D5F9 !important;
-  text-decoration: none !important;
-  transform: scale(1.05);
-}
+// .dark-mode 
+// .link:hover {
+//   border-bottom: 1px solid #E7D5F9 !important;
+//   text-decoration: none !important;
+//   transform: scale(1.05);
+// }
 
 .link:visited {
   text-decoration: none !important;
@@ -71,13 +71,24 @@
 }
 
 .cookie-consent-link {
-  color: #254eaf;
+  @extend .is-blue;
   text-decoration: none;
 }
 
 .cookie-consent-link:hover {
   text-decoration: none;
-  color: #254eaf;
-  border-bottom: 1px solid white;
+  @extend .is-blue;
+  border-bottom: 1px solid #f57d84;
+  transform: scale(1.05);
+}
+
+.icon-link {
+  @extend .is-blue
+}
+
+.icon-link:hover {
+  text-decoration: none imp !important;
+  transform: scale(1.05);
+  @extend .is-purple;
 }
 

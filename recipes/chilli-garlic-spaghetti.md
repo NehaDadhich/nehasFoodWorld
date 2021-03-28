@@ -8,7 +8,7 @@ tags: [ "Spaghetti", "Vegan", "Spicy"]
 type: "recipe"
 ---
 
-Spaghetti stir-fried in a homemade spicy chili garlic sauce, this recipe is perfect for lunch and dinner. You can also cook this recipe with vegetables of your choice, noodles or rice. Also, you can adjust the spice as you prefer.
+Spaghetti stir-fried in a homemade spicy chili garlic sauce, this recipe is perfect for lunch and dinner. You can also cook this recipe with vegetables of your choice, noodles or rice. Also, you can adjust the spice as you prefer. This is my sister's recipe. 
 
 **Serves:** 4\
 **Cooking Time:** 20 to 30 minutes

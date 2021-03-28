@@ -3,7 +3,6 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import RecipePreview from "../components/recipePreview";
 import TechPreview from "../components/techPreview";
-import Search from "../components/search";
 import { Link } from "gatsby";
 import { graphql } from "gatsby";
 
@@ -17,9 +16,6 @@ class Start extends Component {
     <Layout className="is-white-bg">
         <div>
             <SEO title="Home" />
-    <div className="margin-5-b"> 
-            <Search />
-        </div>
         <div className="pad-5-b">
             {recipeSection(recipes)}
             <div className="pad-15-r pad-1-t right-div">
@@ -45,11 +41,15 @@ export default Start
   <div className="pad-5-l pad-5-r">
   <div className="pad-5-l pad-5-r pad-2-b">
       <h1 className="is-black">Latest Recipes </h1>
+      <h4 className="is-black">Browse through all of my mouth-watering vegetarian recipes.</h4>
       </div>
   <div className="row pad-5-l pad-5-r"> 
   {recipes.map(({node}) => (
      <div className="col-xs-12 col-md-4">
     <div>
+      {
+      console.log(node)
+      }
     <RecipePreview {...node.frontmatter} className="is-black"/>
     </div>
   </div> ))}
@@ -62,7 +62,8 @@ export default Start
    return <>
     <div className="pad-2-b pad-8-l">
        <h1 className="margin-0-t is-black margin-2-l" >Making of</h1>
-    <div className="row margin-0-l pad-5-t pad-5-r">
+       <h4 className="is-black margin-2-l">This website is open source and this sections contains a few articles on how this website is built. </h4>
+    <div className="row margin-0-l pad-3-t pad-5-r">
           { techArticles.map(({node}) => (
                 <div className="col-xs-12 col-md-6">
                 <div>

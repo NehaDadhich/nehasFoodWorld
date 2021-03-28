@@ -1,8 +1,10 @@
 import React from "react"   
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import RecipePreview from "../components/recipePreview"
+import {faHome} from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Tags = ( { pageContext, data} ) => {
     const { tag } = pageContext
@@ -15,8 +17,13 @@ const Tags = ( { pageContext, data} ) => {
         description={`Recipes Tagged with "${tag}"`}
       />
         <div className="pad-2-b pad-8-l margin-0-b pad-5-t">
-          <h2 className="margin-0-t is-black pad-2-l" >Recipes tagged as <span className="is-blue">{tag}</span></h2>
-
+        <div className="row margin-1-b pad-2-l" style={{fontSize: '1.5em'}}>
+            <Link to="/"> <FontAwesomeIcon className="icon-link" icon={faHome}/> </Link>
+            <span className="is-black"> &nbsp;  {"<<"} <Link className="link" to="/recipes/"> Latest recipes </Link> </span>
+           </div>
+           <div className="row margin-1-b pad-2-l" style={{fontSize: '1.5em'}}>
+           <h3 className="is-black">Recipes tagged as <span className="is-pink">{tag} </span> </h3>
+           </div>
         <div className="row margin-0-l pad-5-t pad-5-r">
           {
           taggedPosts.map(({node}) => {
