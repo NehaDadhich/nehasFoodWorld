@@ -8,7 +8,7 @@ tags: ["Juice", "Fruits", "Vegan"]
 type: "recipe"
 ---
 
-Spinach Juice is a very refereshing, tasty and healthy drink. This juice is very filling, I like to take it as dinner on hot days. I have used water for this recipe, you could also use chilled coconut water.
+Spinach Juice is a very refreshing, tasty and healthy drink. This juice is very filling, I like to take it as dinner on hot days. I have used water for this recipe, you could also use chilled coconut water.
 
 **Serves:** 4\
 **Total Time:** 5 minutes
@@ -17,7 +17,6 @@ Spinach Juice is a very refereshing, tasty and healthy drink. This juice is very
 - Refrigerate the ingredients for a few hours before making the juice for a chilled and fresh taste.
 
 ###Ingredients
-*Filling*
 - 4 handful of baby spinach
 - 1 large cucumber, chopped (you can peel it if you want)
 - 2 green apples, chopped
@@ -30,4 +29,4 @@ Spinach Juice is a very refereshing, tasty and healthy drink. This juice is very
 - In a blender, blend spinach, chopped cucumber, green apples and kiwis into a smooth paste. 
 - Then add water to the paste and blend again until the desired consistency is achieved. 
 
-Spinach juice is ready. Garnish with sliced cucumber and spinach leave.
+Spinach juice is ready. Garnish with sliced cucumber and spinach leaf.

@@ -20,34 +20,50 @@ npm install --save gatsby-plugin-gdpr-cookies
 Then I added a cookie consent dialog box as
 
 ```Javascript{numberLines: true}
-<CookieConsent
-        location="bottom"
-        buttonText="OK"
-        cookieName="gatsby-gdpr-google-analytics"
-        style={{ background: "#BA83C4", padding: 5 }}
-        buttonStyle={{
-          color: "black",
-          fontSize: "13px",
-          background: "#2e96d3",
-          fontFamily: "lato",
-          borderRadius: 3,
-          padding: 10,
-          marginRight: 60,
-        }}
-        onAccept={() => {
-          Cookies.set('_ga')
-          Cookies.set('_gat')
-          Cookies.set('_gid')
-        }}
-      >
-        <p className="margin-0">
-          To improve your experience, this website uses cookies. By using this website, you accept the privacy policy.
-          <br /> Please read the complete
-          <Link to="/disclaimer" className="cookie-consent-link"> Privacy and Cookie policy </Link> carefully. 
-        </p>
-      </CookieConsent>
+      <CookieConsent
+          location="bottom"
+          buttonText="Accept"
+          cookieName="gatsby-gdpr-google-analytics"
+          enableDeclineButton
+          declineButtonText="Decline"
+          style={{ background: "inherit",
+           padding: 5,
+            zIndex: 2000, 
+            color: "inherit"
+          }}
+          buttonStyle={{
+            color: "black",
+            fontSize: "13px",
+            background: "#00b9b9",
+            fontFamily: "lato",
+            borderRadius: 3,
+            padding: 10,
+            marginRight: 60,
+          }}
+          declineButtonStyle= {{
+            color: "black",
+            fontSize: "13px",
+            background: "#ff4d4d",
+            fontFamily: "lato",
+            borderRadius: 3,
+            padding: 10,
+            marginRight: 10,
+          }}
+          onAccept={() => {
+            initializeAndTrack(location)
+          }}
+          onDecline={() => {
+            window[`ga-disable-YOUR_TRACKING_ID`] = true
+          }}
+        >
+          <p className="margin-0">
+          To improve your experience, this website uses cookies and Google Analytics. By using this website, you accept the privacy policy.
+          <br /> For more information please read the complete
+            <Link to="/disclaimer" className="cookie-consent-link"> Privacy and Cookie policy </Link> carefully. 
+          </p>
+        </CookieConsent>
 ```
-I added a privacy and cookie policy page (in the footer) for vistors reference. To note when the visitor leaves the website by clicking any of the external hyperlinks on this site, I replaced all the ```<a>``` tags with ```<OutboundLink>``` components as 
+I added a <a href="disclaimer" class="link">privacy and cookie policy page</a> for vistors reference. To note when the visitor leaves the website by clicking any of the external hyperlinks on this site, I replaced all the ```<a>``` tags with ```<OutboundLink>``` components as 
 
 ```Javascript{numberLines: true}
 import { OutboundLink } from "gatsby-plugin-google-analytics"

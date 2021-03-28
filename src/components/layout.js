@@ -12,7 +12,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 const Layout = ( { children } ) => {
  const location = useLocation()
- console.log(location)
   return (
       <>
       <div className="is-light-grey-bg is-black">
@@ -49,7 +48,7 @@ const Layout = ( { children } ) => {
             initializeAndTrack(location)
           }}
           onDecline={() => {
-            window[`ga-disable-UA-168017870-1`] = true
+            window[`ga-disable-`] = true
           }}
         >
           <p className="margin-0">
@@ -59,12 +58,12 @@ const Layout = ( { children } ) => {
           </p>
         </CookieConsent>
         <ScrollToTop showBelow={30}/>
+        <Header />
         <Link to="/search">
           <button className="searchButton">
             <FontAwesomeIcon  className="searchIcon" icon={faSearch} /> 
           </button>
         </Link>
-        <Header />
         </div>
         <main className="fixed-height pad-5-t is-white-bg">{children}</main>
         <div className="is-light-grey-bg is-black">
