@@ -48,7 +48,7 @@ const Layout = ( { children } ) => {
             initializeAndTrack(location)
           }}
           onDecline={() => {
-            window[`ga-disable-`] = true
+            window[`ga-disable-UA-168017870-1`] = true
           }}
         >
           <p className="margin-0">
