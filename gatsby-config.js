@@ -32,7 +32,7 @@ module.exports = {
       resolve: `gatsby-plugin-gdpr-cookies`,
       options: {
         googleAnalytics: {
-          trackingId: '', 
+          trackingId: 'UA-168017870-1',
           cookieName: 'gatsby-gdpr-google-analytics', 
           anonymize: true, 
           allowAdFeatures: false 
@@ -43,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: '',
+        trackingId: 'UA-168017870-1',
         respectDNT: true,
         head: false
       },

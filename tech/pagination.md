@@ -79,7 +79,11 @@ class Recipes extends Component {
     const  { data }  = this.props
     const allMarkdownRemark = data.allMarkdownRemark
     const recipes = allMarkdownRemark.edges
-    const { numberOfPages } = this.props.pageContext
+    const { numberOfPages, currentPage } = this.props.pageContext
+    const isFirst = currentPage === 1;
+    const isLast = currentPage === numberOfPages;
+    const prevPagePath = currentPage - 1 === 1 ? '/recipes/' : '/recipes/' + (currentPage - 1).toString();
+    const nextPagePath = '/recipes/' + (currentPage + 1).toString();
 ```
 The data returned is stored in the recipes variables. The number of pages are fetched from the pageContext and used to create pagination as below: 
 
