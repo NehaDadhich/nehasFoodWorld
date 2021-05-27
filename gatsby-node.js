@@ -50,6 +50,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return;
   }
 
+  console.log(recipeResult)
   const recipeItem = recipeResult.data.allMarkdownRemark.edges;
   const itemsPerPage = 6;
   const numberOfPages = Math.ceil(recipeItem.length/ itemsPerPage);

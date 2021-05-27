@@ -17,7 +17,6 @@ class Recipes extends Component {
     const isLast = currentPage === numberOfPages;
     const prevPagePath = currentPage - 1 === 1 ? '/recipes/' : '/recipes/' + (currentPage - 1).toString();
     const nextPagePath = '/recipes/' + (currentPage + 1).toString();
-    console.log(currentPage)
     return (
       <Layout>
          <SEO
