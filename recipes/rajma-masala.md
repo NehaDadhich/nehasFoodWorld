@@ -16,7 +16,7 @@ Rajma Masala is a vegan dish that is made by cooking red kidney beans in a spice
 
 
 ###Ingredients
-- 1 cup of red kidney beans
+- 1 cup of dry red kidney beans for soaking or 2 cans (420 grams each) of canned kidney beans
 - 1 cup of onion puree
 - 2 cups of tomato puree
 - 1 tablespoon of ginger garlic paste
@@ -46,7 +46,8 @@ Rajma Masala is a vegan dish that is made by cooking red kidney beans in a spice
 - Saute` until the onions turn brown. Onions must be cooked properly so that water doesn't get separated from the curry later. 
 - Once the onions are done, add red chilli powder, turmeric powder, coriander powder, garam masala powder and salt to taste and cook for 2 minutes. 
 - Add the tomato puree and cook until water is evaporated and oil starts separating from the gravy. 
-- Then add the boiled kidney beans along with the water that was used for boiling. This water will thicken the gravy. 
+- Then add the boiled kidney beans along with the water that was used for boiling. This water will thicken the gravy. If you are using canned kidney beans you can remove the water. 
+- Mash a few kidney beans with the back of spoon to thicken the curry.
 - Cook for 5 to 6 minutes. Add water if required. 
 - Once done, garnish with coriander sprigs.
 
