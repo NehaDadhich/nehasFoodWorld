@@ -72,30 +72,69 @@ allMarkdownRemark(
 }`} 
 ```
 
-The Recipes class will display six recipes per page as below:
+Then I created a pagination component as: 
+```JavaScript{numberLines: true}
+export default function Pagination ({currentPage, numberOfPages, prefixUrl}) {
+    const prevPagePath = currentPage - 1 === 1 ? '/'+ prefixUrl +'/' : '/'+ prefixUrl +'/' + (currentPage - 1).toString();
+    const nextPagePath = '/' + prefixUrl + '/' + (currentPage + 1).toString();
+    console.log("In pagination");
+    return  (<div>
+       {currentPage > 1 && (
+                    <Link className="button-link margin-3-l" to={prevPagePath} >  
+                      <button className="pagination-button"> Previous </button>
+                      </Link>
+                  )}
+                  {currentPage === numberOfPages && currentPage - 3 >= 1 && (
+                      <Link className="button-link margin-3-l" to={ currentPage - 3 === 1 ? "/" + prefixUrl : "/" + prefixUrl + "/" + (currentPage - 3)}>
+                        <button className="pagination-button"> {currentPage - 3} </button>
+                      </Link>
+                  )}
+                  {currentPage - 2 >= 1 && (
+                      <Link className="button-link margin-3-l" to={ currentPage - 2 === 1 ? "/" + prefixUrl : "/" + prefixUrl + "/" + (currentPage - 2)}>
+                        <button className="pagination-button">  {currentPage - 2} </button>
+                      </Link>
+                  )}
+                  {currentPage > 1 && (
+                      <Link className="button-link margin-3-l" to={prevPagePath}>
+                       <button className="pagination-button"> {currentPage - 1} </button>
+                      </Link>
+                  )}
+                    <Link className="button-link margin-3-l" href="#">
+                    <button className="pagination-button"> {currentPage} </button>
+                    </Link>
+                  {currentPage !== numberOfPages && (
+                      <Link className="button-link margin-3-l" to={nextPagePath}>
+                        <button className="pagination-button"> {currentPage + 1} </button>
+                      </Link>
+                  )}
+                  {currentPage + 2 <= numberOfPages && (
+                      <Link className="button-link margin-3-l" to={"/" + prefixUrl + "/" + (currentPage + 2)}>
+                         <button className="pagination-button"> {currentPage + 2} </button>
+                      </Link>
+                  )}
+                  {currentPage === 1 && currentPage + 3 <= numberOfPages && (
+                      <Link className="button-link margin-3-l" to={"/" + prefixUrl + "/" + (currentPage + 3)}>
+                       <button className="pagination-button">  {currentPage + 3} </button>
+                      </Link>
+                  )}
+                  {currentPage !== numberOfPages && (
+                      <Link className="button-link margin-3-l" to={nextPagePath}>
+                        <button className="pagination-button"> Next</button>
+                      </Link>
+                  )}
+    </div>)
+}
+```
+Then used it in Recipes component as 
+
 ```JavaScript{numberLines: true}
 class Recipes extends Component {
   render() {
-    const  { data }  = this.props
-    const allMarkdownRemark = data.allMarkdownRemark
-    const recipes = allMarkdownRemark.edges
+    ...
     const { numberOfPages, currentPage } = this.props.pageContext
-    const isFirst = currentPage === 1;
-    const isLast = currentPage === numberOfPages;
-    const prevPagePath = currentPage - 1 === 1 ? '/recipes/' : '/recipes/' + (currentPage - 1).toString();
-    const nextPagePath = '/recipes/' + (currentPage + 1).toString();
-```
-The data returned is stored in the recipes variables. The number of pages are fetched from the pageContext and used to create pagination as below: 
-
-```JavaScript{numberLines: true}
- {Array.from({ length: numberOfPages}, (_, i) => (
-          <Link className="button-link margin-3-l"
-            to={`/recipes/${i === 0 ? '' : i + 1}`}
-          >
-            <button className="custom-button">
-            {i + 1}
-          </button>
-          </Link>
-      ))}
+    ...
+    ...
+    <Pagination currentPage={currentPage} numberOfPages={numberOfPages} prefixUrl="recipes"/>
+    ...
 ```
 The first page is created at /recipes and the following will be created as /recipes/2 and so on.
