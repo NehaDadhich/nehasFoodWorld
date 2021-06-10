@@ -35,7 +35,7 @@ export default ({
             <Link className="link" to={type == "recipe" ? "/recipes/" : "/making-of/"}> {type == "recipe" ? "All recipes ": "Making of"} </Link>
              </span>
             </div>
-              <div className="wrapper pad-10-b">
+              <div className="row wrapper pad-10-l pad-10-b">
                 <div className="article-content is-light-grey-bg is-black pad-10-l pad-10-r">
                 <h1 className="margin-3-b is-pink">{title}</h1>
                 <h5 className="margin-3-b is-black"> By <span> <Link className="link" to="/about"> Neha Dadhich</Link></span></h5>
