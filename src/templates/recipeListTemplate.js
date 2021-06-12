@@ -13,10 +13,6 @@ class Recipes extends Component {
     const allMarkdownRemark = data.allMarkdownRemark
     const recipes = allMarkdownRemark.edges
     const { numberOfPages, currentPage } = this.props.pageContext
-    const prevPagePath = currentPage - 1 === 1 ? '/recipes/' : '/recipes/' + (currentPage - 1).toString();
-    const nextPagePath = '/recipes/' + (currentPage + 1).toString();
-    console.log(numberOfPages);
-    console.log(currentPage);
     return (
       <Layout>
          <SEO
@@ -43,7 +39,6 @@ class Recipes extends Component {
           }
         </div> 
         <div className="center-div pad-3-b">
-          {console.log("Creating pagination")}
              <Pagination currentPage={currentPage} numberOfPages={numberOfPages} prefixUrl="recipes"/>
       </div>
       </div>
