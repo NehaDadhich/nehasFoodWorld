@@ -72,12 +72,12 @@ allMarkdownRemark(
 }`} 
 ```
 
-Then I created a pagination component as: 
+Then I created a pagination component as below: 
+
 ```JavaScript{numberLines: true}
 export default function Pagination ({currentPage, numberOfPages, prefixUrl}) {
     const prevPagePath = currentPage - 1 === 1 ? '/'+ prefixUrl +'/' : '/'+ prefixUrl +'/' + (currentPage - 1).toString();
     const nextPagePath = '/' + prefixUrl + '/' + (currentPage + 1).toString();
-    console.log("In pagination");
     return  (<div>
        {currentPage > 1 && (
                     <Link className="button-link margin-3-l" to={prevPagePath} >  
