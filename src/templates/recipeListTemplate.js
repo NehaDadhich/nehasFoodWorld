@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 import Layout from "../components/layout";
 import {faHome} from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { createUniqueName } from "typescript";
+import Pagination from "../components/pagination"
 
 class Recipes extends Component {
   render() {
@@ -13,10 +13,10 @@ class Recipes extends Component {
     const allMarkdownRemark = data.allMarkdownRemark
     const recipes = allMarkdownRemark.edges
     const { numberOfPages, currentPage } = this.props.pageContext
-    const isFirst = currentPage === 1;
-    const isLast = currentPage === numberOfPages;
     const prevPagePath = currentPage - 1 === 1 ? '/recipes/' : '/recipes/' + (currentPage - 1).toString();
     const nextPagePath = '/recipes/' + (currentPage + 1).toString();
+    console.log(numberOfPages);
+    console.log(currentPage);
     return (
       <Layout>
          <SEO
@@ -43,18 +43,8 @@ class Recipes extends Component {
           }
         </div> 
         <div className="center-div pad-3-b">
-        <Link className="button-link margin-3-l" to={prevPagePath} >  
-         <button className="custom-button" disabled={isFirst}>Previous </button>
-         </Link>
-      { Array.from({ length: 4}, (_, i) => {
-          return (<Link className="button-link margin-3-l" to={`/recipes/${i === 0 ? '' : i + 1}`}>
-                  <button className="custom-button"> {i + 1} </button>
-                </Link>)
-        })
-      }
-      <Link className="button-link margin-3-l" to={nextPagePath} >  
-         <button className="custom-button" disabled={isLast}>Next </button>
-         </Link>
+          {console.log("Creating pagination")}
+             <Pagination currentPage={currentPage} numberOfPages={numberOfPages} prefixUrl="recipes"/>
       </div>
       </div>
       </Layout>

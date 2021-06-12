@@ -1,7 +1,7 @@
-.custom-button {
+.custom-button,
+.pagination-button {
     max-width: 250px;
     background-color: #BA83C4;
-    border-radius: .5rem;
     @extend .is-white;
     padding:12px;
     text-align: center;
@@ -10,7 +10,8 @@
     margin-bottom: 2px;
 }
 
-.custom-button:hover {
+.custom-button:hover,
+.pagination-button:hover {
     background-color: inherit;
     border-style: solid;
     border-width: 2px;
@@ -19,7 +20,8 @@
     @extend .is-black;
     cursor: pointer;
 }
-.custom-button:focus
+.custom-button:focus,
+.pagination-button:hover
  {
     background-color: #e97e91;
     border-style: solid;
@@ -32,13 +34,17 @@
 }
 
 .dark-mode
-.custom-button {
+.custom-button, 
+.dark-mode
+.pagination-button{
  background-color: #E7D5F9;
  border: 1px solid #E7D5F9;
 }
 
 .dark-mode
-.custom-button:hover {
+.custom-button:hover,
+.dark-mode
+.pagination-button:hover {
     background-color: inherit;
     border-style: solid;
     border-width: 2px;
@@ -49,7 +55,9 @@
 }
 
 .dark-mode
-.custom-button:focus
+.custom-button:focus,
+.dark-mode
+.pagination-button:focus
  {
     background-color: #eb8ea0;
     border-style: solid;
@@ -59,6 +67,10 @@
     @extend .is-black;
     cursor: pointer;
     outline: 0;
+}
+
+.pagination-button {
+    border-radius: .5rem;
 }
 
 .darkModeBtn,
